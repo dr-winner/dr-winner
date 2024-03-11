@@ -18,7 +18,7 @@
 
   ### 📫 Let's Connect:
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/richard-winner-duvor)
-  [![Portfolio](https://img.shields.io/badge/Portfolio-View-brightgreen?style=flat-square)](https://yourportfolio.com)
+  [![Portfolio](https://dr-winner.github.io/winner/)
 
   ### 📚 Check out my latest projects:
   - [Project 1](https://github.com/yourname/project1) 🌐
