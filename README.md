@@ -2,11 +2,11 @@
   
   ![Hello!](https://img.shields.io/badge/Hello!-👋-brightgreen?style=flat-square&logo=github)
   
-  ## 🚀 Software Developer | 💻 Web Developer | 📊 Data Scientist | 📈 BI Analyst
+  ## 🚀 Software Developer | 💻 Web3 Developer | 📊 Researcher | 📈 BI Analyst
 
   <p align="center">
-    🌟 Passionate about turning data into actionable insights.
-    💡 Building software that matters.
+    🌟 Passionate about web3 and decentralized world.
+    💡 Building software that solves real problems.
     🌐 Crafting web experiences that inspire.
   </p>
 
@@ -14,6 +14,7 @@
   - Python 🐍 | JavaScript 🕸️ | SQL 📜
   - React ⚛️ | Node.js 🚀 | HTML/CSS 🌐
   - Machine Learning 🤖 | Data Visualization 📊
+  - Solidity smart contract development
   - BI Tools: Tableau 📈 | Power BI 🔌
 
   ### 📫 Let's Connect:
