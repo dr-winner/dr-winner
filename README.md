@@ -18,7 +18,7 @@
   - BI Tools: Tableau 📈 | Power BI 🔌
 
   ### 📫 Let's Connect:
-  [![LinkedIn]](https://www.linkedin.com/in/richard-winner-duvor)
+  [![LinkedIn](https://www.linkedin.com/in/richard-winner-duvor)
   [![Portfolio](http://duvorrichardwinner.me/winner/)
 
   ### 📚 Check out my latest projects:
@@ -30,7 +30,6 @@
   - Open to collaborations and new opportunities.
   - Reach out via [email](mailto:duvorrichardwinner@gmail.com) 📧
 
-  ![Visitors](https://visitor-badge.glitch.me/badge?page_id=dr-winner.dr-winner)
 </div>
 
 
