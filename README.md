@@ -22,9 +22,9 @@
   [![Portfolio](http://duvorrichardwinner.me/winner/)
 
   ### 📚 Check out my latest projects:
-  - [QuizApp]([http://duvorrichardwinner.me/Quizzapp](http://duvorrichardwinner.me/QuizApp/) 🌐
-  - [Project 2](https://github.com/yourname/project2) 📊
-  - [Project 3](https://github.com/yourname/project3) 💡
+  - [QuizApp](http://duvorrichardwinner.me/QuizApp/) 🌐
+  - [ABVS](https://abvs.vercel.app/) 📊
+  - [Corporate Site](https://hebronedgeinc.vercel.app/) 💡
 
   ### 💬 Let's Collaborate:
   - Open to collaborations and new opportunities.
