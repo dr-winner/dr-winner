@@ -18,7 +18,7 @@
   - BI Tools: Tableau 📈 | Power BI 🔌
 
   ### 📫 Let's Connect:
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/richard-winner-duvor)
+  [![LinkedIn]](https://www.linkedin.com/in/richard-winner-duvor)
   [![Portfolio](http://duvorrichardwinner.me/winner/)
 
   ### 📚 Check out my latest projects:
