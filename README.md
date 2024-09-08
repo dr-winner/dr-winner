@@ -19,10 +19,10 @@
 
   ### 📫 Let's Connect:
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/richard-winner-duvor)
-  [![Portfolio](https://dr-winner.github.io/winner/)
+  [![Portfolio](http://duvorrichardwinner.me/winner/)
 
   ### 📚 Check out my latest projects:
-  - [Project 1](https://github.com/yourname/project1) 🌐
+  - [QuizApp]([http://duvorrichardwinner.me/Quizzapp](http://duvorrichardwinner.me/QuizApp/) 🌐
   - [Project 2](https://github.com/yourname/project2) 📊
   - [Project 3](https://github.com/yourname/project3) 💡
 
