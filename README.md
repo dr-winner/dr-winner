@@ -23,8 +23,8 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 * 🌍  I'm based in Ghana
 * 🖥️  See my portfolio at [Portfolio](http://duvorrichardwinner.me/winner/)
 * ✉️  You can contact me at [Email](mailto:duvorrichardwinner@gmail.com)
-* 🚀  I'm currently working on [Auditable Blockchain Voting System](https://abvs.vercel.app)
-* 🧠  I'm learning Next.js
+* 🚀  I'm currently working on [Repchain - An NFT marketplace]()
+* 🧠  I'm learning Account Abstraction
 * 🤝  I'm open to collaborating on Web3/Blockchain projects
 
 ## 💻 Tech Arsenal
