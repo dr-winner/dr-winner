@@ -3,7 +3,7 @@
 # 👨‍💻 drWinner
 ### _Architecting Digital Excellence_
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)](http://duvorrichardwinner.me/winner/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000?style=for-the-badge&logo=vercel&logoColor=white)](http://duvorrichardwinner.me)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:duvorrichardwinner@gmail.com)
 [![GitHub](https://img.shields.io/github/followers/dr-winner?logo=github&style=for-the-badge&color=0891b2&labelColor=1c1917)](https://github.com/dr-winner)
 [![Twitter](https://img.shields.io/twitter/follow/dr_winner6?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917)](https://twitter.com/dr_winner6)
