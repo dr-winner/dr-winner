@@ -21,7 +21,7 @@
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) My name is Richard Winner, and I’m an enthusiastic and highly qualified programmer specializing in front-end development and smart contracts. This includes everything from setting up, maintaining, and optimizing the front end of your website to creating smart contracts that function as securely and transparently as possible. I also have extensive experience as a smart contract developer - creating secure and efficient contracts to make your blockchain-based business as safe as possible. My in-depth knowledge of Solidity language enables me to create smart contracts for any purpose. If you have a project in mind for which you need a website, a smart contract, or both, don’t hesitate to get in touch. I’m happy to answer any questions you might have, and together we can get started right away!
 
 * 🌍  I'm based in Ghana
-* 🖥️  See my portfolio at [Portfolio](http://duvorrichardwinner.me/winner/)
+* 🖥️  See my portfolio at [Portfolio](https://duvorrichardwinner.me)
 * ✉️  You can contact me at [Email](mailto:duvorrichardwinner@gmail.com)
 * 🚀  I'm currently working on [Repchain - An NFT marketplace](https://github.com/mintedin/mintedin-platform)
 * 🧠  I'm learning Account Abstraction
