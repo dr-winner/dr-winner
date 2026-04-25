@@ -22,7 +22,7 @@
 
 <br />
 
-<table>
+<table border="0" cellspacing="0" cellpadding="12" width="100%">
 <tr>
 <td width="50%" valign="top">
 
@@ -35,11 +35,7 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 </td>
 <td width="50%" valign="top">
 
-| Quick links | |
-| :--- | :--- |
-| Portfolio | [duvorrichardwinner.me](https://duvorrichardwinner.me) |
-| GitHub | [@dr-winner](https://github.com/dr-winner) |
-| Public repos | [See repos](https://github.com/dr-winner?tab=repositories) |
+**Quick links** — [Portfolio](https://duvorrichardwinner.me) · [GitHub](https://github.com/dr-winner) · [Repos](https://github.com/dr-winner?tab=repositories)
 
 **Focus** · *security ops · web · AI* · *React · Next.js · TypeScript · Python · Solidity*
 
@@ -51,7 +47,7 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 
 ### Stack (compact)
 
-<table>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
 <tr>
 <td align="left" width="25%" valign="top"><b>Web & design</b></td>
 <td align="left" valign="top">
@@ -114,8 +110,8 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 
 *Images load from Vercel / third-party; if a card is blank, refresh (rate limit). Theme: tokyo-night.*
 
-<!-- forced two-up layout: do not use div+center for these, they stack oddly on some widths -->
-<table>
+<!-- two-up: tables use border=0 to avoid the heavy box outline in some previews -->
+<table border="0" cellspacing="0" cellpadding="8" width="100%">
 <tr>
 <td width="50%" align="center" valign="top">
   <a href="https://github.com/anuraghazra/github-readme-stats" title="GitHub stats">
@@ -130,7 +126,7 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 </tr>
 </table>
 
-<table width="100%">
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
 <tr>
 <td align="center" valign="top" colspan="2">
   <a href="https://github.com/DenverCoder1/github-readme-streak-stats" title="Streak">
@@ -140,48 +136,44 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 </tr>
 </table>
 
-<table>
+<table border="0" cellspacing="0" cellpadding="8" width="100%">
 <tr>
 <td width="50%" align="center" valign="top">
   <a href="https://github.com/anuraghazra/github-readme-stats" title="Top languages (donut)">
     <img width="90%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dr-winner&layout=donut&langs_count=8&theme=tokyonight" alt="Top languages (donut)" />
   </a>
 </td>
-<td width="50%" align="center" valign="middle">
-
-**Pinned repo (optional)** — add your best public project:
-
-`api/pin/?username=dr-winner&repo=YOUR_REPO&theme=tokyonight`  
-Replace `YOUR_REPO` and unwrap as an `<a href="..."><img ... /></a>` (same as main stats).
-
+<td width="50%" align="center" valign="top">
+  <a href="https://github.com/dr-winner/dr-winner" title="Profile repository (README)">
+    <img width="100%" src="https://github-readme-stats.vercel.app/api/pin/?username=dr-winner&repo=dr-winner&theme=tokyonight" alt="Pinned: dr-winner" />
+  </a>
+  <p align="center"><sub>Change the <code>repo=</code> query to any other <b>public</b> repository name if you want a project card instead of this profile repo.</sub></p>
 </td>
 </tr>
 </table>
 
-### Trophies & activity
+### Trophies and activity
 
-<table width="100%">
-<tr>
-<td align="center" valign="top">
-  <a href="https://github.com/ryo-ma/github-profile-trophy" title="Trophies">
-    <img width="100%" src="https://github-profile-trophy.vercel.app/?username=dr-winner&theme=tokyonight&row=1&column=7&no-frame=true&no-bg=true&margin-w=6" alt="Trophies" />
+<sub>Official <code>github-profile-trophy.vercel.app</code> is often down (503 / deployment paused). This README uses a <a href="https://github.com/ryo-ma/github-profile-trophy">community mirror</a> for the same SVG. Fallback: <a href="https://gh-trophy.cdnsoft.net/?username=dr-winner&theme=gitdimmed">gh-trophy.cdnsoft.net</a> (open in a new tab if the embed fails).</sub>
+
+<br /><br />
+
+<p align="center">
+  <a href="https://github.com/ryo-ma/github-profile-trophy" title="GitHub profile trophy">
+    <img width="100%" src="https://trophy.ryglcloud.net/?username=dr-winner&theme=gitdimmed&column=7&margin-w=4&no-frame=true" alt="GitHub profile trophies" />
   </a>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top">
-  <a href="https://github.com/Ashutosh00710/github-readme-activity-graph" title="Activity graph">
-    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=dr-winner&theme=tokyo-night&hide_border=true&area=true&point=58a6ff&line=0891b2&color=6e7681" alt="Activity" />
+</p>
+<p align="center">
+  <a href="https://github.com/Ashutosh00710/github-readme-activity-graph" title="Contribution graph">
+    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=dr-winner&theme=tokyo-night&hide_border=true&area=true&point=58a6ff&line=0891b2&color=6e7681" alt="Contribution activity graph" />
   </a>
-</td>
-</tr>
-</table>
+</p>
 
 <br />
 
 ### Connect
 
-<table>
+<table border="0" cellspacing="0" cellpadding="6" width="100%">
 <tr>
 <td align="center">
   <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/Website-0d1117?logo=vercel&style=for-the-badge" height="32" alt="Website" /></a>
