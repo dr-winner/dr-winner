@@ -28,7 +28,7 @@ jobs:
         with:
           github_user_name: dr-winner
           outputs: |
-            dist/snake.svg?palette=github-dark&color_snake=#3fb950&color_dots=#0e1a12,#0e4429,#196c2e,#2ea043,#56d364
+            dist/snake.svg?palette=github-dark&color_snake=#a855f7&color_dots=#1b1440,#4c1d95,#6d28d9,#7c3aed,#22d3ee
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4

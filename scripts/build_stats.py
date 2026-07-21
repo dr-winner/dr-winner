@@ -110,114 +110,105 @@ langs = [(n, 100 * v / lsum, lang_col[n]) for n, v in top]
 
 def fmt(n): return f"{n:,}"
 
-# ---- deck SVG ------------------------------------------------------------
-W, H = 900, 320
+# ---- Aurora-Glass deck SVG ----------------------------------------------
+SANS = "'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif"
+INK, SUB, MUTE = "#f4f2ff", "#c3bce0", "#8b86ad"
+VIOLET, TEAL, PINK = "#a855f7", "#22d3ee", "#ec4899"
+
+W, H = 900, 316
 tiles = [
-    (fmt(total_all), "TOTAL CONTRIBUTIONS", "#56d364", "heat"),
-    (fmt(commits_12), "COMMITS · 12 MO", "#3fb950", "commit"),
-    (fmt(prs_12), "PULL REQUESTS", "#2ea043", "branch"),
-    (fmt(stars_total), "STARS EARNED", "#f0b429", "star"),
-    (str(public_repos), "REPOSITORIES", "#3fb950", "repo"),
-    (str(followers), "FOLLOWERS", "#56d364", "user"),
+    (fmt(total_all), "Total contributions", VIOLET),
+    (fmt(commits_12), "Commits · 12 mo", TEAL),
+    (fmt(prs_12), "Pull requests", "#818cf8"),
+    (fmt(stars_total), "Stars earned", "#fbbf24"),
+    (str(public_repos), "Repositories", PINK),
+    (str(followers), "Followers", "#34d399"),
 ]
 
 
-def icon(kind, x, y, col):
-    g = f'<g stroke="{col}" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate({x},{y})">'
-    if kind == "heat":
-        g = f'<g fill="{col}" stroke="none" transform="translate({x},{y})">'
-        ops = [0.35,0.9,0.55,0.7,0.4,1,0.5,0.8,0.45]
-        for i in range(3):
-            for j in range(3):
-                g += f'<rect x="{i*6}" y="{j*6}" width="4.4" height="4.4" rx="1" fill-opacity="{ops[i*3+j]}"/>'
-    elif kind == "commit":
-        g += '<circle cx="8" cy="8" r="3.4"/><path d="M8 0.5V4.6M8 11.4V15.5"/>'
-    elif kind == "branch":
-        g += '<circle cx="4" cy="3.5" r="2.6"/><circle cx="4" cy="12.5" r="2.6"/><circle cx="13" cy="3.5" r="2.6"/><path d="M4 6.1v3.8M13 6.1c0 4-9 2-9 6.4"/>'
-    elif kind == "flame":
-        g = f'<g fill="{col}" stroke="none" transform="translate({x},{y})"><path d="M8 0.5c2.6 3 4.6 5 4.6 8.2A4.6 4.6 0 0 1 3.4 8.7c0-1.4.6-2.5 1.5-3.4.2 1 .8 1.7 1.6 2 .2-2.6 .5-4.4 1.5-6.8z"/>'
-    elif kind == "repo":
-        g += '<rect x="1.5" y="2" width="13" height="12" rx="1.5"/><path d="M1.5 5.5h13M5 2v12"/>'
-    elif kind == "user":
-        g += '<circle cx="8" cy="5" r="3"/><path d="M2.5 14.5c0-3.3 2.5-5 5.5-5s5.5 1.7 5.5 5"/>'
-    elif kind == "star":
-        g = f'<g fill="{col}" stroke="none" transform="translate({x},{y})"><path d="M8 0.6l2.05 4.55 4.95.5-3.7 3.35 1.05 4.9L8 11.9l-4.35 2.4 1.05-4.9L1 5.65l4.95-.5z"/>'
-    return g + "</g>"
+def aurora_bg(idp, W, H, rx=24):
+    return (f'<defs>'
+            f'<linearGradient id="grad{idp}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#150e2e"/><stop offset="0.45" stop-color="#1b1440"/><stop offset="1" stop-color="#0a1630"/></linearGradient>'
+            f'<linearGradient id="glass{idp}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.02"/></linearGradient>'
+            f'<linearGradient id="hair{idp}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.10"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.28"/></linearGradient>'
+            f'<filter id="blur{idp}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="55"/></filter>'
+            f'<filter id="ng{idp}" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'
+            f'<clipPath id="clip{idp}"><rect x="0" y="0" width="{W}" height="{H}" rx="{rx}"/></clipPath>'
+            f'</defs>'
+            f'<rect x="0" y="0" width="{W}" height="{H}" rx="{rx}" fill="url(#grad{idp})"/>'
+            f'<g clip-path="url(#clip{idp})" filter="url(#blur{idp})" opacity="0.9">'
+            f'<circle cx="{W*0.16:.0f}" cy="{H*0.22:.0f}" r="150" fill="{VIOLET}" opacity="0.5"/>'
+            f'<circle cx="{W*0.85:.0f}" cy="{H*0.30:.0f}" r="140" fill="{TEAL}" opacity="0.4"/>'
+            f'<circle cx="{W*0.55:.0f}" cy="{H*0.95:.0f}" r="130" fill="{PINK}" opacity="0.28"/></g>'
+            f'<rect x="0.75" y="0.75" width="{W-1.5}" height="{H-1.5}" rx="{rx}" fill="url(#glass{idp})" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1.2"/>'
+            f'<rect x="14" y="1.5" width="{W-28}" height="1.4" rx="1" fill="url(#hair{idp})"/>')
 
 
-p = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="GitHub stats for {USER}">
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1424"/><stop offset="1" stop-color="#06090f"/></linearGradient>
-  <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1f9c52" fill-opacity="0.05"/></pattern>
-  <filter id="ng" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-  <clipPath id="body"><rect x="9" y="53" width="{W-18}" height="{H-62}"/></clipPath>
-</defs>
-<rect x="6" y="6" width="{W-12}" height="{H-12}" rx="16" fill="url(#bg)" stroke="#1a3a2a" stroke-width="1.5"/>
-<g clip-path="url(#body)"><rect x="9" y="53" width="{W-18}" height="{H-62}" fill="url(#grid)"/></g>
-<g font-family="{MONO}">
-  <circle cx="34" cy="30" r="6.5" fill="#ff5f57"/><circle cx="56" cy="30" r="6.5" fill="#f0b429"/><circle cx="78" cy="30" r="6.5" fill="#3fb950"/>
-  <text x="{W/2}" y="35" text-anchor="middle" font-size="13.5" fill="#6b7a99" letter-spacing="0.5">{USER}@soc: ~/metrics</text>
-  <line x1="9" y1="52" x2="{W-9}" y2="52" stroke="#16233c" stroke-width="1.2"/>
-  <text x="30" y="80" font-size="13" fill="#5b6b87">❯ gh api /stats --summary <tspan fill="#3fb950">✓ live</tspan></text>
-  <line x1="580" y1="70" x2="580" y2="{H-24}" stroke="#16233c" stroke-width="1.2"/>
-  <text x="606" y="80" font-size="12.5" fill="#6b7a99" letter-spacing="2">LANGUAGES</text>
-</g>
-<g font-family="{MONO}">''']
-x0, colw, gap, tw, th = 30, 170, 15, 170, 84
-row_y = [96, 192]
-for i, (num, label, col, ic) in enumerate(tiles):
+p = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" fill="none" role="img" aria-label="GitHub stats for {USER}">']
+p.append(aurora_bg("m", W, H))
+# header row
+p.append(f'<circle cx="34" cy="34" r="4" fill="#34d399"/><text x="48" y="39" font-family="{SANS}" font-size="14" font-weight="600" fill="{SUB}">Live from the GitHub API</text>')
+p.append(f'<text x="600" y="39" font-family="{SANS}" font-size="12.5" font-weight="600" fill="{MUTE}" letter-spacing="2">TOP LANGUAGES</text>')
+p.append(f'<line x1="574" y1="60" x2="574" y2="{H-22}" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>')
+# stat cards 3x2
+x0, colw, gap, cw, ch = 30, 175, 12, 168, 90
+row_y = [64, 166]
+for i, (num, label, col) in enumerate(tiles):
     c, r = i % 3, i // 3
     tx, ty = x0 + c * (colw + gap), row_y[r]
-    d0 = 0.08 * i
+    d0 = 0.07 * i
     p.append(f'<g opacity="0"><animate attributeName="opacity" begin="{d0:.2f}s" dur="0.5s" fill="freeze" values="0;1"/>'
-             f'<animateTransform attributeName="transform" type="translate" begin="{d0:.2f}s" dur="0.5s" fill="freeze" values="0 8;0 0"/>'
-             f'<rect x="{tx}" y="{ty}" width="{tw}" height="{th}" rx="10" fill="#0b1526" stroke="#16233c" stroke-width="1"/>'
-             f'<rect x="{tx}" y="{ty}" width="3.5" height="{th}" rx="2" fill="{col}"/>{icon(ic, tx+16, ty+15, col)}'
-             f'<text x="{tx+16}" y="{ty+62}" font-size="30" font-weight="700" fill="{col}" filter="url(#ng)">{num}</text>'
-             f'<text x="{tx+17}" y="{ty+77}" font-size="10" fill="#6b7a99" letter-spacing="1">{label}</text></g>')
-bx, bw, by0, bstep = 606, 250, 108, 37
+             f'<animateTransform attributeName="transform" type="translate" begin="{d0:.2f}s" dur="0.5s" fill="freeze" values="0 10;0 0"/>'
+             f'<rect x="{tx}" y="{ty}" width="{cw}" height="{ch}" rx="14" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.10"/>'
+             f'<circle cx="{tx+22}" cy="{ty+26}" r="4.5" fill="{col}"/>'
+             f'<circle cx="{tx+22}" cy="{ty+26}" r="4.5" fill="{col}" opacity="0.6" filter="url(#ngm)"/>'
+             f'<text x="{tx+20}" y="{ty+66}" font-family="{SANS}" font-size="34" font-weight="800" fill="{col}" filter="url(#ngm)">{num}</text>'
+             f'<text x="{tx+21}" y="{ty+82}" font-family="{SANS}" font-size="11" font-weight="500" fill="{SUB}" letter-spacing="0.3">{label}</text></g>')
+# language bars
+bx, bw, by0, bstep = 600, 268, 92, 40
 for i, (name, pct, col) in enumerate(langs):
     y = by0 + i * bstep
-    p.append(f'<circle cx="{bx+4}" cy="{y-4}" r="4" fill="{col}"/>'
-             f'<text x="{bx+18}" y="{y}" font-size="12.5" fill="#c9d6e8">{name}</text>'
-             f'<text x="{bx+bw}" y="{y}" text-anchor="end" font-size="12" fill="#7d8ba5" font-weight="600">{pct:.1f}%</text>'
-             f'<rect x="{bx}" y="{y+7}" width="{bw}" height="7" rx="3.5" fill="#0e1a2e"/>'
-             f'<rect x="{bx}" y="{y+7}" width="0" height="7" rx="3.5" fill="{col}">'
-             f'<animate attributeName="width" begin="{0.3+0.12*i:.2f}s" dur="0.9s" fill="freeze" values="0;{bw*pct/100:.1f}" '
+    p.append(f'<circle cx="{bx+5}" cy="{y-4}" r="4" fill="{col}"/>'
+             f'<text x="{bx+20}" y="{y}" font-family="{SANS}" font-size="13" font-weight="500" fill="{INK}">{name}</text>'
+             f'<text x="{bx+bw}" y="{y}" text-anchor="end" font-family="{SANS}" font-size="12.5" fill="{SUB}" font-weight="600">{pct:.1f}%</text>'
+             f'<rect x="{bx}" y="{y+8}" width="{bw}" height="7" rx="3.5" fill="#ffffff" fill-opacity="0.06"/>'
+             f'<rect x="{bx}" y="{y+8}" width="0" height="7" rx="3.5" fill="{col}">'
+             f'<animate attributeName="width" begin="{0.3+0.1*i:.2f}s" dur="0.9s" fill="freeze" values="0;{bw*pct/100:.1f}" '
              f'calcMode="spline" keyTimes="0;1" keySplines="0.2 0.7 0.2 1"/></rect>')
-p.append("</g></svg>")
+p.append("</svg>")
 os.makedirs(OUT, exist_ok=True)
 open(os.path.join(OUT, "command-deck.svg"), "w").write("".join(p))
 
-# ---- heatmap SVG ---------------------------------------------------------
+# ---- Aurora heatmap SVG --------------------------------------------------
 nW = len(weeks_12)
 cell, gap2 = 12, 3
 gw = nW * (cell + gap2)
-HW, HH = gw + 60, 7 * (cell + gap2) + 74
-mx = max((day for w in weeks_12 for day in [d["contributionCount"] for d in w["contributionDays"]]), default=1) or 1
-scale = ["#0e1a12", "#0e4429", "#196c2e", "#2ea043", "#56d364"]
+HW, HH = gw + 60, 7 * (cell + gap2) + 78
+mx = max((d["contributionCount"] for w in weeks_12 for d in w["contributionDays"]), default=1) or 1
+# violet -> teal aurora scale
+scale = ["#ffffff14", "#4c1d95", "#6d28d9", "#7c3aed", "#22d3ee"]
 def lvl(c):
     if c <= 0: return scale[0]
     return scale[min(4, 1 + int(c / (mx / 4 + 0.001)))]
-hp = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{HW}" height="{HH}" viewBox="0 0 {HW} {HH}" role="img" aria-label="Contribution heatmap">
-<rect x="1" y="1" width="{HW-2}" height="{HH-2}" rx="14" fill="#0a1120" stroke="#1a3a2a" stroke-width="1.2"/>
-<g font-family="{MONO}">
-  <text x="24" y="30" font-size="13" fill="#6b7a99">❯ contributions --last-year <tspan fill="#56d364" font-weight="700">{last["contributionCalendar"]["totalContributions"]:,}</tspan></text>''']
-ox, oy = 30, 48
+hp = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{HW}" height="{HH}" viewBox="0 0 {HW} {HH}" fill="none" role="img" aria-label="Contribution heatmap">']
+hp.append(aurora_bg("hm", HW, HH, rx=18))
+hp.append(f'<text x="26" y="34" font-family="{SANS}" font-size="13.5" font-weight="500" fill="{SUB}">Contributions · last year '
+          f'<tspan font-weight="800" fill="{TEAL}">{last["contributionCalendar"]["totalContributions"]:,}</tspan></text>')
+ox, oy = 28, 50
 di = 0
 for wi, w in enumerate(weeks_12):
     for d in w["contributionDays"]:
-        wd = dt.date.fromisoformat(d["date"]).weekday()  # Mon=0
-        row = (wd + 1) % 7  # Sun row 0
+        wd = dt.date.fromisoformat(d["date"]).weekday()
+        row = (wd + 1) % 7
         x = ox + wi * (cell + gap2)
         y = oy + row * (cell + gap2)
-        hp.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="2.5" fill="{lvl(d["contributionCount"])}" opacity="0">'
+        hp.append(f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3" fill="{lvl(d["contributionCount"])}" opacity="0">'
                   f'<animate attributeName="opacity" begin="{0.0008*di:.3f}s" dur="0.4s" fill="freeze" values="0;1"/></rect>')
         di += 1
-hp.append(f'<g transform="translate({HW-150},{HH-22})" font-family="{MONO}"><text x="0" y="10" font-size="10" fill="#5b6b87">less</text>')
+hp.append(f'<g transform="translate({HW-150},{HH-24})" font-family="{SANS}"><text x="0" y="10" font-size="10" fill="{MUTE}">less</text>')
 for i, cscale in enumerate(scale):
-    hp.append(f'<rect x="{34+i*15}" y="1" width="11" height="11" rx="2.5" fill="{cscale}"/>')
-hp.append(f'<text x="{34+5*15+2}" y="10" font-size="10" fill="#5b6b87">more</text></g></g></svg>')
+    hp.append(f'<rect x="{34+i*15}" y="1" width="11" height="11" rx="3" fill="{cscale}"/>')
+hp.append(f'<text x="{34+5*15+2}" y="10" font-size="10" fill="{MUTE}">more</text></g></svg>')
 open(os.path.join(OUT, "heatmap.svg"), "w").write("".join(hp))
 
 print(f"OK total={total_all} commits12={commits_12} prs12={prs_12} cur={cur} long={longest} "

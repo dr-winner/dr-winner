@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="58" viewBox="0 0 900 58" fill="none"><defs>
+  <linearGradient id="gradsstats" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#150e2e"/>
+    <stop offset="0.45" stop-color="#1b1440"/>
+    <stop offset="1" stop-color="#0a1630"/>
+  </linearGradient>
+  <linearGradient id="txtsstats" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#e9d5ff"/>
+    <stop offset="0.5" stop-color="#c4b5fd"/>
+    <stop offset="1" stop-color="#67e8f9"/>
+  </linearGradient>
+  <linearGradient id="glasssstats" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+    <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.045"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity="0.02"/>
+  </linearGradient>
+  <linearGradient id="hairsstats" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+    <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.10"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity="0.28"/>
+  </linearGradient>
+  <filter id="blursstats" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="55"/></filter>
+  <filter id="softsstats" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+</defs><clipPath id="clipsstats"><rect x="0" y="0" width="900" height="58" rx="16"/></clipPath><rect x="0" y="0" width="900" height="58" rx="16" fill="url(#gradsstats)"/><g clip-path="url(#clipsstats)" filter="url(#blursstats)" opacity="0.9">
+    <circle cx="144" cy="12" r="150" fill="#a855f7" opacity="0.55">
+      <animate attributeName="cx" dur="16s" repeatCount="indefinite" values="144;198;144" keyTimes="0;0.5;1"/>
+      <animate attributeName="cy" dur="16s" repeatCount="indefinite" values="12;20;12" keyTimes="0;0.5;1"/>
+    </circle>
+    <circle cx="738" cy="17" r="140" fill="#22d3ee" opacity="0.42">
+      <animate attributeName="cx" dur="19s" repeatCount="indefinite" values="738;666;738" keyTimes="0;0.5;1"/>
+      <animate attributeName="cy" dur="19s" repeatCount="indefinite" values="17;9;17" keyTimes="0;0.5;1"/>
+    </circle>
+    <circle cx="495" cy="52" r="130" fill="#ec4899" opacity="0.30">
+      <animate attributeName="cx" dur="22s" repeatCount="indefinite" values="495;558;495" keyTimes="0;0.5;1"/>
+    </circle>
+  </g><rect x="0.75" y="0.75" width="898.5" height="56.5" rx="16" fill="url(#glasssstats)" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1.2"/><rect x="14" y="1.5" width="872" height="1.4" rx="1" fill="url(#hairsstats)"/><rect x="18" y="15" width="30" height="28" rx="9" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.12"/><text x="33" y="34" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" fill="#ec4899">03</text><text x="62" y="37" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="20" font-weight="700" fill="#f4f2ff" letter-spacing="0.2">Metrics</text><text x="876" y="36" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12.5" fill="#8b86ad" letter-spacing="0.5">live from the api</text></svg>
