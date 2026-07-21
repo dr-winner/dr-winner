@@ -4,18 +4,12 @@
 
 <p align="center">
   <a href="https://github.com/dr-winner">
-    <img src="./assets/hero-console.svg" width="100%" alt="Richard Winner Duvor — SOC Analyst · Pentester · AI Engineer · Web3 Builder" />
+    <img src="./assets/hero-console.svg" width="100%" alt="drWinner — SOC Analyst · Pentester · AI Engineer · Web3 Builder" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/portfolio-duvorrichardwinner.me-3fb950?style=flat-square&labelColor=0b1220" alt="Portfolio" /></a>
-  &nbsp;
-  <a href="mailto:duvorrichardwinner@gmail.com"><img src="https://img.shields.io/badge/email-reach%20out-7ee787?style=flat-square&labelColor=0b1220" alt="Email" /></a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/richard-winner-duvor/"><img src="https://img.shields.io/badge/linkedin-connect-4a9df0?style=flat-square&labelColor=0b1220" alt="LinkedIn" /></a>
-  &nbsp;
-  <a href="https://x.com/dr_winner6"><img src="https://img.shields.io/badge/x-@dr__winner6-c9d6e8?style=flat-square&labelColor=0b1220" alt="X" /></a>
   &nbsp;
   <img src="https://komarev.com/ghpvc/?username=dr-winner&style=flat-square&color=3fb950&labelColor=0b1220&label=visitors" alt="Profile views" />
   &nbsp;
@@ -27,14 +21,6 @@
 <p><img src="./assets/banner-about.svg" width="100%" alt="❯ ./about.sh — who am i" /></p>
 
 I work where **defence and AI** meet — building detections, running incidents, and writing automation that actually removes toil. I also ship from a **web + smart-contract** background (Next.js, EVM, Solidity), so I reason like both a **builder** and a **blue-teamer**: break it, then build it back safer. Currently focused on **agentic AI for security operations** and shipping clean, fast interfaces on top of it.
-
-```yaml
-role:     SOC · pentest · AI · web3
-open_to:  security engineering · AI-integrated roles
-based_in: Accra, Ghana  (GMT+0)
-stack:    TypeScript · Python · Solidity · Next.js
-links:    duvorrichardwinner.me · github.com/dr-winner
-```
 
 <br />
 
@@ -64,7 +50,6 @@ links:    duvorrichardwinner.me · github.com/dr-winner
 
 <p align="center">
   <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/Website-0b1220?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" /></a>
-  <a href="mailto:duvorrichardwinner@gmail.com"><img src="https://img.shields.io/badge/Email-0b1220?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
   <a href="https://github.com/dr-winner"><img src="https://img.shields.io/badge/GitHub-0b1220?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
   <a href="https://www.linkedin.com/in/richard-winner-duvor/"><img src="https://img.shields.io/badge/LinkedIn-0b1220?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn" /></a>
   <a href="https://x.com/dr_winner6"><img src="https://img.shields.io/badge/X-0b1220?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>

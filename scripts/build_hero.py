@@ -26,15 +26,15 @@ def kt(t):  # clamp to [0,1]
 # segments = list of (text, color, bold)  -> rendered as tspans; width from char count
 lines = [
     ([("❯ ", C["prompt"], True), ("whoami", C["cmd"], False)], 0.5, 0.55, False, False),
-    ([("Richard Winner Duvor", C["name"], True)], 1.2, 1.05, True, False),
+    ([("drWinner", C["name"], True)], 1.2, 1.05, True, False),
     ([("❯ ", C["prompt"], True), ("cat role.txt", C["cmd"], False)], 2.5, 0.75, False, False),
     ([("SOC Analyst", C["role"], False), ("  ·  ", C["sep"], True), ("Pentester", C["role"], False),
       ("  ·  ", C["sep"], True), ("AI Engineer", C["role"], False), ("  ·  ", C["sep"], True),
       ("Web3 Builder", C["role"], False)], 3.4, 1.55, False, False),
     ([("❯ ", C["prompt"], True), ("systemctl status --now", C["cmd"], False)], 5.2, 1.0, False, False),
-    ([("● ONLINE", C["green"], True), ("   Accra · GMT+0", C["role"], False),
-      ("   ▲ 44-day streak", C["amber"], False), ("   ◆ open to work", C["cyan"], False)],
-     6.4, 1.7, False, False),
+    ([("● ONLINE", C["green"], True), ("   ▲ 44-day streak", C["amber"], False),
+      ("   ◆ open to work", C["cyan"], False)],
+     6.4, 1.5, False, False),
     ([("❯ ", C["prompt"], True)], 8.4, 0.2, False, True),
 ]
 
@@ -45,7 +45,7 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 parts = []
-parts.append(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Richard Winner Duvor — SOC Analyst, Pentester, AI Engineer, Web3 Builder">
+parts.append(f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="drWinner — SOC Analyst, Pentester, AI Engineer, Web3 Builder">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#0c1424"/>
