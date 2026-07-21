@@ -1,0 +1,40 @@
+name: Generate contribution snake
+
+# Renders the contribution-graph "snake" and pushes it to the `output` branch as
+# an SVG the README embeds via raw.githubusercontent. Self-hosted on our own
+# repo branch, so the image never depends on a live third-party render service.
+on:
+  schedule:
+    - cron: "30 2 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/snake.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-snake
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate snake SVG (emerald theme)
+        uses: Platane/snk@v3
+        with:
+          github_user_name: dr-winner
+          outputs: |
+            dist/snake.svg?palette=github-dark&color_snake=#3fb950&color_dots=#0e1a12,#0e4429,#196c2e,#2ea043,#56d364
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
