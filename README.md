@@ -8,12 +8,12 @@
 </p>
 
 <p align="center">
-  <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/portfolio-duvorrichardwinner.me-22d3ee?style=flat-square&labelColor=0b1220" alt="Portfolio" /></a>
+  <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/portfolio-duvorrichardwinner.me-3fb950?style=flat-square&labelColor=0b1220" alt="Portfolio" /></a>
   <a href="mailto:duvorrichardwinner@gmail.com"><img src="https://img.shields.io/badge/email-reach%20out-7ee787?style=flat-square&labelColor=0b1220" alt="Email" /></a>
   <a href="https://www.linkedin.com/in/richard-winner-duvor/"><img src="https://img.shields.io/badge/linkedin-connect-4a9df0?style=flat-square&labelColor=0b1220" alt="LinkedIn" /></a>
   <a href="https://x.com/dr_winner6"><img src="https://img.shields.io/badge/x-@dr__winner6-c9d6e8?style=flat-square&labelColor=0b1220" alt="X" /></a>
-  <img src="https://komarev.com/ghpvc/?username=dr-winner&style=flat-square&color=22d3ee&labelColor=0b1220&label=visitors" alt="Profile views" />
-  <a href="https://github.com/dr-winner?tab=followers"><img src="https://img.shields.io/github/followers/dr-winner?style=flat-square&logo=github&color=c297ff&labelColor=0b1220&label=followers" alt="Followers" /></a>
+  <img src="https://komarev.com/ghpvc/?username=dr-winner&style=flat-square&color=3fb950&labelColor=0b1220&label=visitors" alt="Profile views" />
+  <a href="https://github.com/dr-winner?tab=followers"><img src="https://img.shields.io/github/followers/dr-winner?style=flat-square&logo=github&color=56d364&labelColor=0b1220&label=followers" alt="Followers" /></a>
 </p>
 
 <br />
@@ -87,7 +87,7 @@ links:    portfolio · github · repos
 <img src="https://img.shields.io/badge/GCP-0b1220?style=flat-square&logo=googlecloud&logoColor=4285F4" alt="GCP" />
 <img src="https://img.shields.io/badge/Vercel-0b1220?style=flat-square&logo=vercel&logoColor=white" alt="Vercel" />
 <img src="https://img.shields.io/badge/Git-0b1220?style=flat-square&logo=git&logoColor=F05032" alt="Git" />
-<img src="https://img.shields.io/badge/GitHub%20Actions-0b1220?style=flat-square&logo=githubactions&logoColor=22d3ee" alt="Actions" />
+<img src="https://img.shields.io/badge/GitHub%20Actions-0b1220?style=flat-square&logo=githubactions&logoColor=3fb950" alt="Actions" />
 <img src="https://img.shields.io/badge/Bash-0b1220?style=flat-square&logo=gnubash&logoColor=7ee787" alt="Bash" />
 </td>
 </tr>
@@ -106,9 +106,40 @@ links:    portfolio · github · repos
 
 <sub>Numbers are regenerated from the live GitHub API twice a day by a <a href="./.github/workflows/stats.yml">GitHub Action</a> and committed as SVG — served from this repo, so they never rate-limit or show a broken card.</sub>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dr-winner/dr-winner/output/snake.svg" width="100%" alt="Contribution snake eating the contribution graph" />
+</p>
+
 <br />
 
-### `❯ ./connect --now`
+### `❯ ./now`
+
+<table border="0" cellspacing="0" cellpadding="8" width="100%">
+<tr>
+<td width="33%" valign="top">
+
+**🛡️ Security ops**
+Agentic AI for the SOC — detections, triage, and automation that removes toil. Hands-on with an AWS threat-detection lab.
+
+</td>
+<td width="33%" valign="top">
+
+**⚙️ Building**
+Shipping fast, clean interfaces on Next.js + TypeScript, and smart contracts on the EVM (Solidity / Hardhat).
+
+</td>
+<td width="33%" valign="top">
+
+**🌱 Learning**
+Going deeper on detection engineering, cloud security, and applied LLMs for defensive tooling.
+
+</td>
+</tr>
+</table>
+
+<br />
+
+### `❯ ./connect`
 
 <p align="center">
   <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/Website-0b1220?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" /></a>

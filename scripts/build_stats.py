@@ -93,15 +93,16 @@ while day_count.get(d.isoformat(), 0) > 0:
     cur += 1
     d -= dt.timedelta(days=1)
 
-# languages
+# languages + stars (one pass over owned repos)
 LANG_Q = """{ user(login:"%s"){ repositories(first:100, ownerAffiliations:OWNER, isFork:false){
-  nodes{ languages(first:10, orderBy:{field:SIZE,direction:DESC}){ edges{ size node{name color} } } } } } }""" % USER
-lang_tot, lang_col = {}, {}
+  nodes{ stargazerCount languages(first:10, orderBy:{field:SIZE,direction:DESC}){ edges{ size node{name color} } } } } } }""" % USER
+lang_tot, lang_col, stars_total = {}, {}, 0
 for node in gql(LANG_Q, {})["user"]["repositories"]["nodes"]:
+    stars_total += node.get("stargazerCount", 0)
     for e in node["languages"]["edges"]:
         n = e["node"]["name"]
         lang_tot[n] = lang_tot.get(n, 0) + e["size"]
-        lang_col[n] = e["node"]["color"] or "#58d0ff"
+        lang_col[n] = e["node"]["color"] or "#56d364"
 lsum = sum(lang_tot.values()) or 1
 top = sorted(lang_tot.items(), key=lambda x: -x[1])[:5]
 langs = [(n, 100 * v / lsum, lang_col[n]) for n, v in top]
@@ -112,12 +113,12 @@ def fmt(n): return f"{n:,}"
 # ---- deck SVG ------------------------------------------------------------
 W, H = 900, 320
 tiles = [
-    (fmt(total_all), "TOTAL CONTRIBUTIONS", "#58d0ff", "heat"),
-    (fmt(commits_12), "COMMITS · 12 MO", "#7ee787", "commit"),
-    (fmt(prs_12), "PULL REQUESTS", "#c297ff", "branch"),
-    (str(cur), "DAY STREAK · CURRENT", "#f0b429", "flame"),
-    (str(public_repos), "REPOSITORIES", "#58d0ff", "repo"),
-    (str(followers), "FOLLOWERS", "#7ee787", "user"),
+    (fmt(total_all), "TOTAL CONTRIBUTIONS", "#56d364", "heat"),
+    (fmt(commits_12), "COMMITS · 12 MO", "#3fb950", "commit"),
+    (fmt(prs_12), "PULL REQUESTS", "#2ea043", "branch"),
+    (fmt(stars_total), "STARS EARNED", "#f0b429", "star"),
+    (str(public_repos), "REPOSITORIES", "#3fb950", "repo"),
+    (str(followers), "FOLLOWERS", "#56d364", "user"),
 ]
 
 
@@ -139,17 +140,19 @@ def icon(kind, x, y, col):
         g += '<rect x="1.5" y="2" width="13" height="12" rx="1.5"/><path d="M1.5 5.5h13M5 2v12"/>'
     elif kind == "user":
         g += '<circle cx="8" cy="5" r="3"/><path d="M2.5 14.5c0-3.3 2.5-5 5.5-5s5.5 1.7 5.5 5"/>'
+    elif kind == "star":
+        g = f'<g fill="{col}" stroke="none" transform="translate({x},{y})"><path d="M8 0.6l2.05 4.55 4.95.5-3.7 3.35 1.05 4.9L8 11.9l-4.35 2.4 1.05-4.9L1 5.65l4.95-.5z"/>'
     return g + "</g>"
 
 
 p = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="GitHub stats for {USER}">
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1424"/><stop offset="1" stop-color="#06090f"/></linearGradient>
-  <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1c88c8" fill-opacity="0.05"/></pattern>
+  <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1f9c52" fill-opacity="0.05"/></pattern>
   <filter id="ng" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   <clipPath id="body"><rect x="9" y="53" width="{W-18}" height="{H-62}"/></clipPath>
 </defs>
-<rect x="6" y="6" width="{W-12}" height="{H-12}" rx="16" fill="url(#bg)" stroke="#1e2f4d" stroke-width="1.5"/>
+<rect x="6" y="6" width="{W-12}" height="{H-12}" rx="16" fill="url(#bg)" stroke="#1a3a2a" stroke-width="1.5"/>
 <g clip-path="url(#body)"><rect x="9" y="53" width="{W-18}" height="{H-62}" fill="url(#grid)"/></g>
 <g font-family="{MONO}">
   <circle cx="34" cy="30" r="6.5" fill="#ff5f57"/><circle cx="56" cy="30" r="6.5" fill="#f0b429"/><circle cx="78" cy="30" r="6.5" fill="#3fb950"/>
@@ -192,14 +195,14 @@ cell, gap2 = 12, 3
 gw = nW * (cell + gap2)
 HW, HH = gw + 60, 7 * (cell + gap2) + 74
 mx = max((day for w in weeks_12 for day in [d["contributionCount"] for d in w["contributionDays"]]), default=1) or 1
-scale = ["#0e1a2e", "#0e4a5e", "#157a94", "#22b8d6", "#7dedff"]
+scale = ["#0e1a12", "#0e4429", "#196c2e", "#2ea043", "#56d364"]
 def lvl(c):
     if c <= 0: return scale[0]
     return scale[min(4, 1 + int(c / (mx / 4 + 0.001)))]
 hp = [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{HW}" height="{HH}" viewBox="0 0 {HW} {HH}" role="img" aria-label="Contribution heatmap">
-<rect x="1" y="1" width="{HW-2}" height="{HH-2}" rx="14" fill="#0a1120" stroke="#1e2f4d" stroke-width="1.2"/>
+<rect x="1" y="1" width="{HW-2}" height="{HH-2}" rx="14" fill="#0a1120" stroke="#1a3a2a" stroke-width="1.2"/>
 <g font-family="{MONO}">
-  <text x="24" y="30" font-size="13" fill="#6b7a99">❯ contributions --last-year <tspan fill="#7dedff" font-weight="700">{last["contributionCalendar"]["totalContributions"]:,}</tspan></text>''']
+  <text x="24" y="30" font-size="13" fill="#6b7a99">❯ contributions --last-year <tspan fill="#56d364" font-weight="700">{last["contributionCalendar"]["totalContributions"]:,}</tspan></text>''']
 ox, oy = 30, 48
 di = 0
 for wi, w in enumerate(weeks_12):
