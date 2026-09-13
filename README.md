@@ -13,15 +13,15 @@
 <p align="center">
   <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/PORTFOLIO-0B1722?style=for-the-badge&logo=vercel&logoColor=50E3C2" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/richard-winner-duvor/"><img src="https://img.shields.io/badge/LINKEDIN-0B1722?style=for-the-badge&logo=linkedin&logoColor=66A3FF" alt="LinkedIn" /></a>
+  <a href="https://x.com/dr_winner6"><img src="https://img.shields.io/badge/X-0B1722?style=for-the-badge&logo=x&logoColor=F2FAF8" alt="X" /></a>
   <a href="mailto:drwinner03@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0B1722?style=for-the-badge&logo=gmail&logoColor=FFB86B" alt="Email Richard" /></a>
-  <a href="https://duvorrichardwinner.me/resume.pdf"><img src="https://img.shields.io/badge/RÉSUMÉ-0B1722?style=for-the-badge&logo=readme&logoColor=F2FAF8" alt="Résumé" /></a>
 </p>
 
 ## `01 / Profile`
 
 I investigate threats, engineer detections, and harden cloud infrastructure. My background in full-stack systems helps me defend beyond the alert: I can trace a weakness through application code, identity, infrastructure, deployment, and telemetry—then ship the fix.
 
-I am currently focused on **security operations**, **detection engineering**, and **cloud security**, with practical work across AWS, Azure, Python, TypeScript, SIEM workflows, secure CI/CD, and incident response.
+I am currently focused on **SOC operations**, **penetration testing**, **application security**, and **cloud security**, with practical work across AWS, Azure, Python, TypeScript, SIEM workflows, secure CI/CD, and incident response.
 
 > **Operating principle:** understand how the system is built, prove how it can fail, and leave it safer than you found it.
 
@@ -37,7 +37,8 @@ I am currently focused on **security operations**, **detection engineering**, an
 ## `03 / Capability map`
 
 ```text
-DETECT     SIEM workflows · alert triage · threat hunting · MITRE ATT&CK · log analysis
+DETECT     SOC workflows · alert triage · threat hunting · MITRE ATT&CK · log analysis
+ASSESS     penetration testing · application security · attack-surface review · Burp Suite
 HARDEN     IAM · cloud controls · secure configuration · containers · CI/CD guardrails
 RESPOND    incident investigation · evidence handling · remediation · post-incident learning
 BUILD      Python automation · TypeScript · Next.js · APIs · PostgreSQL · Docker
@@ -73,6 +74,6 @@ BUILD      Python automation · TypeScript · Next.js · APIs · PostgreSQL · D
 ---
 
 <p align="center">
-  <strong>Open to cybersecurity, SOC, detection-engineering, and cloud-security roles.</strong><br />
+  <strong>Open to SOC, penetration-testing, application-security, and cloud-security roles.</strong><br />
   <sub>Accra, Ghana · GMT · <a href="mailto:drwinner03@gmail.com">drwinner03@gmail.com</a></sub>
 </p>
