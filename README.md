@@ -14,7 +14,7 @@
   <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/PORTFOLIO-0B1722?style=for-the-badge&logo=vercel&logoColor=50E3C2" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/richard-winner-duvor/"><img src="https://img.shields.io/badge/LINKEDIN-0B1722?style=for-the-badge&logo=linkedin&logoColor=66A3FF" alt="LinkedIn" /></a>
   <a href="https://x.com/dr_winner6"><img src="https://img.shields.io/badge/X-0B1722?style=for-the-badge&logo=x&logoColor=F2FAF8" alt="X" /></a>
-  <a href="mailto:drwinner03@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0B1722?style=for-the-badge&logo=gmail&logoColor=FFB86B" alt="Email Richard" /></a>
+  <a href="https://duvorrichardwinner.me/#contact"><img src="https://img.shields.io/badge/CONTACT-0B1722?style=for-the-badge&logo=vercel&logoColor=FFB86B" alt="Contact through portfolio" /></a>
 </p>
 
 ## About
@@ -55,5 +55,5 @@ Security engineer with a builder's background. I work across **SOC operations, p
 
 <p align="center">
   <strong>Open to SOC, penetration-testing, application-security, and cloud-security roles.</strong><br />
-  <sub>Accra, Ghana · GMT · <a href="mailto:drwinner03@gmail.com">drwinner03@gmail.com</a></sub>
+  <sub>Accra, Ghana · GMT · <a href="https://duvorrichardwinner.me/#contact">duvorrichardwinner.me</a></sub>
 </p>
