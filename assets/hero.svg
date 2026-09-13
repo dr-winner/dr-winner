@@ -40,16 +40,28 @@
     <text x="42" y="153" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="url(#accent)">Cyber &amp; Cloud Security Engineer</text>
     <text x="42" y="187" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="14.5" fill="#9DB1BB">I investigate threats, engineer detections, and harden cloud infrastructure.</text>
 
-    <g transform="translate(42 220)">
-      <rect width="130" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
+    <g transform="translate(42 210)">
+      <rect width="116" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
       <circle cx="16" cy="15" r="3" fill="#50E3C2"/>
-      <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">SOC OPERATIONS</text>
-      <rect x="140" width="104" height="30" rx="15" fill="#66A3FF" fill-opacity="0.08" stroke="#66A3FF" stroke-opacity="0.30"/>
-      <circle cx="156" cy="15" r="3" fill="#66A3FF"/>
-      <text x="167" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D3E2FF">PENTEST</text>
-      <rect x="254" width="104" height="30" rx="15" fill="#FFB86B" fill-opacity="0.07" stroke="#FFB86B" stroke-opacity="0.28"/>
-      <circle cx="270" cy="15" r="3" fill="#FFB86B"/>
-      <text x="281" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#FFE2C2">APPSEC</text>
+      <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">THREAT OPS</text>
+      <rect x="126" width="134" height="30" rx="15" fill="#66A3FF" fill-opacity="0.08" stroke="#66A3FF" stroke-opacity="0.30"/>
+      <circle cx="142" cy="15" r="3" fill="#66A3FF"/>
+      <text x="153" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D3E2FF">CLOUD DEFENCE</text>
+      <rect x="270" width="126" height="30" rx="15" fill="#FFB86B" fill-opacity="0.07" stroke="#FFB86B" stroke-opacity="0.28"/>
+      <circle cx="286" cy="15" r="3" fill="#FFB86B"/>
+      <text x="297" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#FFE2C2">SECURE BUILD</text>
+
+      <g transform="translate(0 37)">
+        <rect width="130" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
+        <circle cx="16" cy="15" r="3" fill="#50E3C2"/>
+        <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">SOC OPERATIONS</text>
+        <rect x="140" width="104" height="30" rx="15" fill="#66A3FF" fill-opacity="0.08" stroke="#66A3FF" stroke-opacity="0.30"/>
+        <circle cx="156" cy="15" r="3" fill="#66A3FF"/>
+        <text x="167" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D3E2FF">PENTEST</text>
+        <rect x="254" width="104" height="30" rx="15" fill="#FFB86B" fill-opacity="0.07" stroke="#FFB86B" stroke-opacity="0.28"/>
+        <circle cx="270" cy="15" r="3" fill="#FFB86B"/>
+        <text x="281" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#FFE2C2">APPSEC</text>
+      </g>
     </g>
 
     <g transform="translate(746 145)">
