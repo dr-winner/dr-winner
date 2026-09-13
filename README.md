@@ -1,75 +1,78 @@
-<!-- Profile: dr-winner — Aurora-Glass theme. Every visual in ./assets is hand-built
-     SVG (hero, glass section headers, panels, stats) refreshed by .github/workflows.
-     No third-party embed and no default-GitHub table/heading chrome. -->
+<!--
+  GitHub profile for @dr-winner.
+  Signature visuals are generated from scripts/ and committed locally so the
+  profile stays fast, accessible, and independent of third-party card services.
+-->
 
 <p align="center">
-  <a href="https://github.com/dr-winner">
-    <img src="./assets/hero.svg" width="100%" alt="drWinner — Security · Web · AI. SOC Analyst, Pentester, AI Engineer, Web3 Builder." />
+  <a href="https://duvorrichardwinner.me">
+    <img src="./assets/hero.svg" width="100%" alt="Richard Winner Duvor — Cyber and Cloud Security Engineer" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/portfolio-duvorrichardwinner.me-a855f7?style=flat-square&labelColor=150e2e" alt="Portfolio" /></a>
-  &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=dr-winner&style=flat-square&color=a855f7&labelColor=150e2e&label=visitors" alt="Profile views" />
-  &nbsp;
-  <a href="https://github.com/dr-winner?tab=followers"><img src="https://img.shields.io/github/followers/dr-winner?style=flat-square&logo=github&logoColor=white&color=22d3ee&labelColor=150e2e&label=followers" alt="Followers" /></a>
+  <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/PORTFOLIO-0B1722?style=for-the-badge&logo=vercel&logoColor=50E3C2" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/richard-winner-duvor/"><img src="https://img.shields.io/badge/LINKEDIN-0B1722?style=for-the-badge&logo=linkedin&logoColor=66A3FF" alt="LinkedIn" /></a>
+  <a href="mailto:drwinner03@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0B1722?style=for-the-badge&logo=gmail&logoColor=FFB86B" alt="Email Richard" /></a>
+  <a href="https://duvorrichardwinner.me/resume.pdf"><img src="https://img.shields.io/badge/RÉSUMÉ-0B1722?style=for-the-badge&logo=readme&logoColor=F2FAF8" alt="Résumé" /></a>
 </p>
 
-<br />
+## `01 / Profile`
 
-<p><img src="./assets/hdr-about.svg" width="100%" alt="01 · About — who am i" /></p>
+I investigate threats, engineer detections, and harden cloud infrastructure. My background in full-stack systems helps me defend beyond the alert: I can trace a weakness through application code, identity, infrastructure, deployment, and telemetry—then ship the fix.
 
-I work where **defence and AI** meet — building detections, running incidents, and writing automation that actually removes toil. I also ship from a **web + smart-contract** background (Next.js, EVM, Solidity), so I reason like both a **builder** and a **blue-teamer**: break it, then build it back safer. Currently focused on **agentic AI for security operations** and shipping clean, fast interfaces on top of it.
+I am currently focused on **security operations**, **detection engineering**, and **cloud security**, with practical work across AWS, Azure, Python, TypeScript, SIEM workflows, secure CI/CD, and incident response.
 
-<br />
+> **Operating principle:** understand how the system is built, prove how it can fail, and leave it safer than you found it.
 
-<p><img src="./assets/hdr-stack.svg" width="100%" alt="02 · Stack — tools of the trade" /></p>
+## `02 / Selected systems`
 
-<p align="center"><img src="./assets/stack.svg" width="100%" alt="Stack: React, Next.js, TypeScript, Tailwind, Figma; Node, Python, PostgreSQL, MongoDB, Prisma, Docker; SOC/Blue-team, Ethereum, Solidity, Hardhat; AWS, GCP, Vercel, Git, Actions, Bash" /></p>
+| System | What it proves | Core stack |
+|:--|:--|:--|
+| **[CareerOS](https://github.com/dr-winner/careeros)** | Production-minded career platform with an audited Prisma/PostgreSQL data model and non-destructive migration workflow. | Next.js · React · Prisma · Neon |
+| **[Roster](https://github.com/dr-winner/roster)** | Memory-backed hiring agent where prior outcomes alter future eligibility, with ACP orchestration and signed Base settlement flows. | Python · FastAPI · Sibyl · Base |
+| **[Hardened Flask delivery](https://github.com/dr-winner/npontu-devops)** | Tested container delivery with a non-root runtime, health checks, GHCR publishing, and Azure Container Apps deployment. | Flask · Docker · GitHub Actions · Azure |
+| **[Security portfolio platform](https://github.com/dr-winner/portfolio)** | Accessible Next.js portfolio with secure admin sessions, rate-limited APIs, sanitized uploads, telemetry, and an operational CMS. | Next.js · TypeScript · PostgreSQL · Vercel |
 
-<br />
+## `03 / Capability map`
 
-<p><img src="./assets/hdr-stats.svg" width="100%" alt="03 · Metrics — live from the api" /></p>
-
-<p align="center"><img src="./assets/command-deck.svg" width="100%" alt="GitHub stats: contributions, commits, pull requests, stars, repositories, followers, and top languages" /></p>
-<p align="center"><img src="./assets/heatmap.svg" width="100%" alt="Contribution heatmap for the last year" /></p>
-<p align="center"><img src="https://raw.githubusercontent.com/dr-winner/dr-winner/output/snake.svg" width="100%" alt="Contribution snake" /></p>
-
-<p align="center"><sub>Every stat above is regenerated from the live GitHub API twice a day by a <a href="./.github/workflows/stats.yml">GitHub Action</a> and committed as SVG — served from this repo, so nothing rate-limits or breaks.</sub></p>
-
-<br />
-
-<p><img src="./assets/hdr-now.svg" width="100%" alt="04 · Now — current focus" /></p>
-
-<p align="center"><img src="./assets/now.svg" width="100%" alt="Now: security ops — agentic AI for the SOC; building — Next.js/TypeScript interfaces and EVM contracts; learning — detection engineering, cloud security, applied LLMs" /></p>
-
-<br />
-
-<p><img src="./assets/hdr-connect.svg" width="100%" alt="05 · Connect — say hello" /></p>
-
-<p align="center">
-  <a href="https://duvorrichardwinner.me"><img src="https://img.shields.io/badge/Website-150e2e?style=for-the-badge&logo=vercel&logoColor=white" alt="Website" /></a>
-  <a href="https://github.com/dr-winner"><img src="https://img.shields.io/badge/GitHub-150e2e?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/richard-winner-duvor/"><img src="https://img.shields.io/badge/LinkedIn-150e2e?style=for-the-badge&logo=linkedin&logoColor=60a5fa" alt="LinkedIn" /></a>
-  <a href="https://x.com/dr_winner6"><img src="https://img.shields.io/badge/X-150e2e?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-</p>
+```text
+DETECT     SIEM workflows · alert triage · threat hunting · MITRE ATT&CK · log analysis
+HARDEN     IAM · cloud controls · secure configuration · containers · CI/CD guardrails
+RESPOND    incident investigation · evidence handling · remediation · post-incident learning
+BUILD      Python automation · TypeScript · Next.js · APIs · PostgreSQL · Docker
+```
 
 <details>
-<summary align="center"><sub>more places to find me</sub></summary>
-<p align="center"><br />
-  <a href="https://medium.com/@duvorr60"><img src="https://img.shields.io/badge/Medium-150e2e?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
-  <a href="https://drwinner.hashnode.dev"><img src="https://img.shields.io/badge/Hashnode-150e2e?style=for-the-badge&logo=hashnode&logoColor=a855f7" alt="Hashnode" /></a>
-  <a href="https://www.dev.to/dr-winner"><img src="https://img.shields.io/badge/dev.to-150e2e?style=for-the-badge&logo=dev.to&logoColor=white" alt="dev.to" /></a>
-  <a href="https://www.tiktok.com/@procoder"><img src="https://img.shields.io/badge/TikTok-150e2e?style=for-the-badge&logo=tiktok&logoColor=22d3ee" alt="TikTok" /></a>
-  <a href="https://www.instagram.com/winner.richard"><img src="https://img.shields.io/badge/Instagram-150e2e?style=for-the-badge&logo=instagram&logoColor=ec4899" alt="Instagram" /></a>
-  <a href="https://t.me/dr_winner"><img src="https://img.shields.io/badge/Telegram-150e2e?style=for-the-badge&logo=telegram&logoColor=22d3ee" alt="Telegram" /></a>
-  <a href="https://www.behance.net/duvorrichard"><img src="https://img.shields.io/badge/Behance-150e2e?style=for-the-badge&logo=behance&logoColor=a855f7" alt="Behance" /></a>
-</p>
-</details>
-
+<summary><strong>Tooling I work with</strong></summary>
 <br />
 
+**Security:** Splunk, Elastic, Microsoft Sentinel, Wireshark, Nmap, Burp Suite, CrowdStrike concepts, MITRE ATT&CK<br>
+**Cloud & delivery:** AWS, Azure, GCP, Docker, Terraform, GitHub Actions, Vercel<br>
+**Engineering:** Python, TypeScript, Next.js, React, FastAPI, PostgreSQL, Prisma
+
+</details>
+
+## `04 / Engineering telemetry`
+
 <p align="center">
-  <sub><i>Build secure systems. Ship clean interfaces. Defend the stack.</i></sub>
+  <img src="./assets/command-deck.svg" width="100%" alt="Live GitHub engineering telemetry: contributions, commits, pull requests, public repositories, and language mix" />
+</p>
+<p align="center">
+  <img src="./assets/heatmap.svg" width="100%" alt="GitHub contribution activity over the last 365 days" />
+</p>
+
+<sub>Generated from the GitHub API by a scheduled <a href="./.github/workflows/stats.yml">GitHub Action</a>. Self-hosted SVGs mean no third-party card outages or rate-limit placeholders.</sub>
+
+## `05 / Current focus`
+
+- Building stronger cloud-security and detection-engineering labs with reproducible evidence.
+- Turning repetitive security workflows into small, reviewable automation.
+- Shipping systems whose operational behavior is as intentional as their interface.
+
+---
+
+<p align="center">
+  <strong>Open to cybersecurity, SOC, detection-engineering, and cloud-security roles.</strong><br />
+  <sub>Accra, Ghana · GMT · <a href="mailto:drwinner03@gmail.com">drwinner03@gmail.com</a></sub>
 </p>
