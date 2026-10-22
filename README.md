@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://duvorrichardwinner.me">
-    <img src="./assets/hero.svg" width="100%" alt="Richard Winner Duvor — Cyber and Cloud Security Engineer" />
+    <img src="./assets/hero.svg" width="100%" alt="Winner (dr-winner) — Cyber and Cloud Security Engineer" />
   </a>
 </p>
 
@@ -16,6 +16,8 @@
   <a href="https://x.com/dr_winner6"><img src="https://img.shields.io/badge/X-0B1722?style=for-the-badge&logo=x&logoColor=F2FAF8" alt="X" /></a>
   <a href="https://duvorrichardwinner.me/#contact"><img src="https://img.shields.io/badge/CONTACT-0B1722?style=for-the-badge&logo=vercel&logoColor=FFB86B" alt="Contact through portfolio" /></a>
 </p>
+
+# Winner (dr-winner)
 
 ## About
 
