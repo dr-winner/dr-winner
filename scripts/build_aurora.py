@@ -17,8 +17,8 @@ MONO = "'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace"
 def build_hero() -> None:
     width, height = 900, 292
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">Richard Winner Duvor — Cyber and Cloud Security Engineer</title>
-  <desc id="desc">Security engineering profile banner with an animated signal map.</desc>
+  <title id="title">Winner (dr-winner) - Ethical Hacker &amp; Web Penetration Tester</title>
+  <desc id="desc">Security engineering and penetration testing profile banner with an animated signal map.</desc>
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#08141D"/>
@@ -54,31 +54,25 @@ def build_hero() -> None:
     <path d="M596 0V292" stroke="#A7C5CE" stroke-opacity="0.10"/>
 
     <text x="42" y="53" font-family="{MONO}" font-size="12" font-weight="600" letter-spacing="2.8" fill="#50E3C2">RW / SECURITY ENGINEERING</text>
-    <text x="40" y="115" font-family="{SANS}" font-size="45" font-weight="750" letter-spacing="-1.5" fill="#F2FAF8">Richard Winner Duvor</text>
-    <text x="42" y="153" font-family="{SANS}" font-size="22" font-weight="600" fill="url(#accent)">Cyber &amp; Cloud Security Engineer</text>
-    <text x="42" y="187" font-family="{SANS}" font-size="14.5" fill="#9DB1BB">I investigate threats, engineer detections, and harden cloud infrastructure.</text>
+    <text x="40" y="115" font-family="{SANS}" font-size="45" font-weight="750" letter-spacing="-1.5" fill="#F2FAF8">Winner (dr-winner)</text>
+    <text x="42" y="153" font-family="{SANS}" font-size="22" font-weight="600" fill="url(#accent)">Ethical Hacker &amp; Web Penetration Tester</text>
+    <text x="42" y="187" font-family="{SANS}" font-size="13.5" fill="#9DB1BB">I break web applications, audit cloud infrastructure, and engineer secure code fixes.</text>
 
     <g transform="translate(42 210)">
-      <rect width="116" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
+      <rect width="146" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
       <circle cx="16" cy="15" r="3" fill="#50E3C2"/>
-      <text x="27" y="19.5" font-family="{MONO}" font-size="11.5" fill="#CDE9E3">THREAT OPS</text>
-      <rect x="126" width="134" height="30" rx="15" fill="#66A3FF" fill-opacity="0.08" stroke="#66A3FF" stroke-opacity="0.30"/>
-      <circle cx="142" cy="15" r="3" fill="#66A3FF"/>
-      <text x="153" y="19.5" font-family="{MONO}" font-size="11.5" fill="#D3E2FF">CLOUD DEFENCE</text>
-      <rect x="270" width="126" height="30" rx="15" fill="#FFB86B" fill-opacity="0.07" stroke="#FFB86B" stroke-opacity="0.28"/>
-      <circle cx="286" cy="15" r="3" fill="#FFB86B"/>
-      <text x="297" y="19.5" font-family="{MONO}" font-size="11.5" fill="#FFE2C2">SECURE BUILD</text>
+      <text x="27" y="19.5" font-family="{MONO}" font-size="11.5" fill="#CDE9E3">WEB PENTESTING</text>
+      <rect x="156" width="180" height="30" rx="15" fill="#66A3FF" fill-opacity="0.08" stroke="#66A3FF" stroke-opacity="0.30"/>
+      <circle cx="172" cy="15" r="3" fill="#66A3FF"/>
+      <text x="183" y="19.5" font-family="{MONO}" font-size="11.5" fill="#D3E2FF">OFFENSIVE SECURITY</text>
 
       <g transform="translate(0 37)">
-        <rect width="130" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
+        <rect width="96" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
         <circle cx="16" cy="15" r="3" fill="#50E3C2"/>
-        <text x="27" y="19.5" font-family="{MONO}" font-size="11.5" fill="#CDE9E3">SOC OPERATIONS</text>
-        <rect x="140" width="104" height="30" rx="15" fill="#66A3FF" fill-opacity="0.08" stroke="#66A3FF" stroke-opacity="0.30"/>
-        <circle cx="156" cy="15" r="3" fill="#66A3FF"/>
-        <text x="167" y="19.5" font-family="{MONO}" font-size="11.5" fill="#D3E2FF">PENTEST</text>
-        <rect x="254" width="104" height="30" rx="15" fill="#FFB86B" fill-opacity="0.07" stroke="#FFB86B" stroke-opacity="0.28"/>
-        <circle cx="270" cy="15" r="3" fill="#FFB86B"/>
-        <text x="281" y="19.5" font-family="{MONO}" font-size="11.5" fill="#FFE2C2">APPSEC</text>
+        <text x="27" y="19.5" font-family="{MONO}" font-size="11.5" fill="#CDE9E3">APPSEC</text>
+        <rect x="106" width="154" height="30" rx="15" fill="#66A3FF" fill-opacity="0.08" stroke="#66A3FF" stroke-opacity="0.30"/>
+        <circle cx="122" cy="15" r="3" fill="#66A3FF"/>
+        <text x="133" y="19.5" font-family="{MONO}" font-size="11.5" fill="#D3E2FF">CLOUD SECURITY</text>
       </g>
     </g>
 

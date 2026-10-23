@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://duvorrichardwinner.me">
-    <img src="./assets/hero.svg" width="100%" alt="Winner (dr-winner) — Cyber and Cloud Security Engineer" />
+    <img src="./assets/hero.svg" width="100%" alt="Winner (dr-winner) - Ethical Hacker & Web Penetration Tester" />
   </a>
 </p>
 
@@ -23,7 +23,7 @@
 
 **Web Application Penetration Tester & Application Security Engineer** with a production software engineering foundation in **React, Next.js, and TypeScript**. 
 
-I bridge the gap between offensive security testing and hands-on software development: using a builder's intuition to identify architectural and logic flaws across web applications, APIs, and cloud services—then engineering concrete, production-ready code fixes, parameterized patterns, and automated detection guardrails.
+I bridge the gap between offensive security testing and hands-on software development: using a builder's intuition to identify architectural and logic flaws across web applications, APIs, and cloud services, then engineering concrete, production-ready code fixes, parameterized patterns, and automated detection guardrails.
 
 ---
 
@@ -47,9 +47,9 @@ I bridge the gap between offensive security testing and hands-on software develo
 
 Leveraging full-stack engineering experience to build and audit modern web architectures:
 
-- **[Security Portfolio Platform](https://github.com/dr-winner/portfolio)** — Production personal platform featuring secure session management, rate-limited API routes, sanitized payload uploads, and real-time operational telemetry.<br><sub>Next.js · TypeScript · Tailwind CSS · PostgreSQL · Vercel</sub>
-- **[CareerOS](https://github.com/dr-winner/careeros)** — High-performance career operating system with an audited relational data model, strict input validation, and zero-downtime database migration pipelines.<br><sub>React · Next.js · TypeScript · Prisma · Neon PostgreSQL</sub>
-- **[Hardened Flask Delivery](https://github.com/dr-winner/npontu-devops)** — Containerized microservice delivery with non-root runtime enforcement, automated health checks, GHCR publishing, and Azure deployment.<br><sub>Flask · Docker · GitHub Actions · Azure Container Apps</sub>
+- **[Security Portfolio Platform](https://github.com/dr-winner/portfolio)**: Production personal platform featuring secure session management, rate-limited API routes, sanitized payload uploads, and real-time operational telemetry.<br><sub>Next.js · TypeScript · Tailwind CSS · PostgreSQL · Vercel</sub>
+- **[CareerOS](https://github.com/dr-winner/careeros)**: High-performance career operating system with an audited relational data model, strict input validation, and zero-downtime database migration pipelines.<br><sub>React · Next.js · TypeScript · Prisma · Neon PostgreSQL</sub>
+- **[Hardened Flask Delivery](https://github.com/dr-winner/npontu-devops)**: Containerized microservice delivery with non-root runtime enforcement, automated health checks, GHCR publishing, and Azure deployment.<br><sub>Flask · Docker · GitHub Actions · Azure Container Apps</sub>
 
 ---
 
