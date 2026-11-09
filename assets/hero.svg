@@ -1,24 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="292" viewBox="0 0 900 292" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">Winner (dr-winner) - Ethical Hacker &amp; Web Penetration Tester</title>
-  <desc id="desc">Security engineering and penetration testing profile banner with an animated signal map.</desc>
+  <title id="title">Winner (dr-winner) - Ethical Hacker &amp; AI/LLM Application Security</title>
+  <desc id="desc">Security engineering profile banner: console styling with a signal map, node links and the words AppSec built for</desc>
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#08141D"/>
-      <stop offset="0.58" stop-color="#0A1721"/>
-      <stop offset="1" stop-color="#071019"/>
+      <stop stop-color="#07090C"/>
+      <stop offset="0.6" stop-color="#0B1016"/>
+      <stop offset="1" stop-color="#06090D"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop stop-color="#50E3C2"/>
-      <stop offset="1" stop-color="#66A3FF"/>
+      <stop offset="1" stop-color="#B7A5FB"/>
+    </linearGradient>
+    <linearGradient id="action" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#3ECFB0"/>
+      <stop offset="1" stop-color="#2AA78D"/>
     </linearGradient>
     <radialGradient id="radar" cx="50%" cy="50%" r="50%">
       <stop stop-color="#50E3C2" stop-opacity="0.10"/>
       <stop offset="1" stop-color="#50E3C2" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0H0V24" stroke="#8EC5D1" stroke-opacity="0.055"/>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" stroke="#8EC5D1" stroke-opacity="0.05"/>
     </pattern>
-    <clipPath id="clip"><rect width="900" height="292" rx="22"/></clipPath>
+    <clipPath id="clip"><rect width="900" height="292" rx="18"/></clipPath>
     <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -31,33 +35,48 @@
   <g clip-path="url(#clip)">
     <rect width="900" height="292" fill="url(#surface)"/>
     <rect width="900" height="292" fill="url(#grid)"/>
-    <circle cx="746" cy="145" r="190" fill="url(#radar)"/>
-    <path d="M0 1H900" stroke="url(#accent)" stroke-opacity="0.9"/>
+    <circle cx="746" cy="145" r="200" fill="url(#radar)"/>
+    <!-- top rule -->
+    <rect x="0" y="0" width="900" height="2" fill="url(#accent)"/>
+    <!-- divider rail -->
     <path d="M596 0V292" stroke="#A7C5CE" stroke-opacity="0.10"/>
+    <path d="M596 3H900" stroke="#A7C5CE" stroke-opacity="0.16" stroke-dasharray="1 6"/>
 
-    <text x="42" y="53" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="12" font-weight="600" letter-spacing="2.8" fill="#50E3C2">RW / SECURITY ENGINEERING</text>
-    <text x="40" y="115" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="45" font-weight="750" letter-spacing="-1.5" fill="#F2FAF8">Winner (dr-winner)</text>
-    <text x="42" y="153" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="url(#accent)">Ethical Hacker &amp; Web Penetration Tester</text>
-    <text x="42" y="187" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="13.5" fill="#9DB1BB">I break web applications, audit cloud infrastructure, and engineer secure code fixes.</text>
+    <!-- corner brackets -->
+    <g stroke="#A7C5CE" stroke-opacity="0.38" stroke-width="2" fill="none">
+      <path d="M14 30V14H30"/><path d="M870 14H886V30"/>
+      <path d="M886 262V278H870"/><path d="M30 278H14V262"/>
+    </g>
 
-    <g transform="translate(42 210)">
+    <!-- label -->
+    <text x="42" y="50" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="12" font-weight="700" letter-spacing="2.6" fill="#50E3C2">[ RW / SECURITY ENGINEERING ]</text>
+
+    <!-- name + role -->
+    <text x="40" y="112" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="45" font-weight="750" letter-spacing="-1.5" fill="#EDF4F7">Winner (dr-winner)</text>
+    <text x="42" y="150" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="url(#accent)">Ethical Hacker &amp; AI/LLM App Security</text>
+    <!-- terminal line -->
+    <text x="42" y="184" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="12.5" fill="#9DB1BB">&#62; finds what breaks <tspan fill="#50E3C2">&#183;</tspan> explains the fix <tspan fill="#50E3C2">&#183;</tspan> ships guardrails <tspan fill="#B7A5FB" class="motion">&#9679;</tspan></text>
+
+    <!-- chips -->
+    <g transform="translate(42 202)">
       <rect width="146" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
       <circle cx="16" cy="15" r="3" fill="#50E3C2"/>
       <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">WEB PENTESTING</text>
-      <rect x="156" width="180" height="30" rx="15" fill="#66A3FF" fill-opacity="0.08" stroke="#66A3FF" stroke-opacity="0.30"/>
-      <circle cx="172" cy="15" r="3" fill="#66A3FF"/>
-      <text x="183" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D3E2FF">OFFENSIVE SECURITY</text>
+      <rect x="156" width="150" height="30" rx="15" fill="#B7A5FB" fill-opacity="0.07" stroke="#B7A5FB" stroke-opacity="0.30"/>
+      <circle cx="172" cy="15" r="3" fill="#B7A5FB"/>
+      <text x="183" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D9D3F7">AI / LLM SECURITY</text>
 
       <g transform="translate(0 37)">
         <rect width="96" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
         <circle cx="16" cy="15" r="3" fill="#50E3C2"/>
         <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">APPSEC</text>
-        <rect x="106" width="154" height="30" rx="15" fill="#66A3FF" fill-opacity="0.08" stroke="#66A3FF" stroke-opacity="0.30"/>
-        <circle cx="122" cy="15" r="3" fill="#66A3FF"/>
+        <rect x="106" width="154" height="30" rx="15" fill="#5B8DEF" fill-opacity="0.08" stroke="#5B8DEF" stroke-opacity="0.30"/>
+        <circle cx="122" cy="15" r="3" fill="#5B8DEF"/>
         <text x="133" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D3E2FF">CLOUD SECURITY</text>
       </g>
     </g>
 
+    <!-- signal map -->
     <g transform="translate(746 145)">
       <circle r="104" stroke="#72A6B4" stroke-opacity="0.14"/>
       <circle r="76" stroke="#72A6B4" stroke-opacity="0.18" stroke-dasharray="3 7"/>
@@ -65,10 +84,14 @@
       <path d="M0 0L0-103A103 103 0 0 1 73-73Z" fill="#50E3C2" fill-opacity="0.07" class="motion">
         <animateTransform attributeName="transform" type="rotate" values="0;360" dur="12s" repeatCount="indefinite"/>
       </path>
-      <path d="M-91 36L-44-15L8 28L67-52L96 4" stroke="#66A3FF" stroke-opacity="0.55" stroke-width="1.5"/>
+      <path d="M-91 36L-44-15L8 28L67-52L96 4" stroke="#66A3FF" stroke-opacity="0.45" stroke-width="1.5"/>
+      <path d="M-44-15L8 28" stroke="#B7A5FB" stroke-opacity="0.5" stroke-width="1.5" class="motion">
+        <animate attributeName="stroke-opacity" values="0.15;0.65;0.15" dur="3.2s" repeatCount="indefinite"/>
+      </path>
       <g fill="#50E3C2" filter="url(#glow)">
         <circle cx="-91" cy="36" r="3"/><circle cx="-44" cy="-15" r="4"/><circle cx="8" cy="28" r="3"/><circle cx="67" cy="-52" r="4"/><circle cx="96" cy="4" r="3"/>
       </g>
+      <circle cx="67" cy="-52" r="2.5" fill="#B7A5FB"/>
       <circle r="7" fill="#50E3C2" fill-opacity="0.16" stroke="#50E3C2"/>
       <circle r="16" stroke="#50E3C2" stroke-opacity="0" class="motion">
         <animate attributeName="r" values="9;24" dur="2.8s" repeatCount="indefinite"/>
@@ -76,8 +99,11 @@
       </circle>
     </g>
 
-    <text x="624" y="265" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="10.5" letter-spacing="1.2" fill="#718994">SIGNAL: ACTIVE</text>
-    <circle cx="851" cy="261" r="4" fill="#50E3C2"/>
+    <!-- status footer -->
+    <text x="622" y="262" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="10.5" letter-spacing="1.4" fill="#718994">STATUS: OWASP · CVSS · ATT&amp;CK</text>
+    <circle cx="851" cy="258" r="4" fill="#3ECFB0" class="motion">
+      <animate attributeName="fill-opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
   </g>
-  <rect x="0.75" y="0.75" width="898.5" height="290.5" rx="21.25" stroke="#8EC5D1" stroke-opacity="0.22" stroke-width="1.5"/>
+  <rect x="0.75" y="0.75" width="898.5" height="290.5" rx="17.25" stroke="#8EC5D1" stroke-opacity="0.20" stroke-width="1.5"/>
 </svg>
