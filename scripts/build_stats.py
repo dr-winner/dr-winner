@@ -19,15 +19,16 @@ OUT.mkdir(exist_ok=True)
 
 SANS = "'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif"
 MONO = "'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace"
-BG = "#08141D"
-PANEL = "#0C1A24"
-LINE = "#243946"
-TEXT = "#F2FAF8"
+BG = "#06090D"
+PANEL = "#0B1016"
+LINE = "#1E2B36"
+TEXT = "#EDF4F7"
 SUB = "#9DB1BB"
-MUTE = "#718994"
+MUTE = "#64808C"
 MINT = "#50E3C2"
-BLUE = "#66A3FF"
+BLUE = "#5B8DEF"
 AMBER = "#FFB86B"
+VIOLET = "#B7A5FB"
 
 if not TOKEN:
     sys.exit("no token in STATS_TOKEN / GITHUB_TOKEN")
@@ -113,31 +114,31 @@ def base_svg(width, height, title):
     return [f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" role="img" aria-label="{esc(title)}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{PANEL}"/><stop offset="1" stop-color="{BG}"/></linearGradient>
-    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="{MINT}"/><stop offset="1" stop-color="{BLUE}"/></linearGradient>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#8EC5D1" stroke-opacity="0.045"/></pattern>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0"><stop stop-color="{MINT}"/><stop offset="1" stop-color="{VIOLET}"/></linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" stroke="#A7C5CE" stroke-opacity="0.05"/></pattern>
   </defs>
-  <rect width="{width}" height="{height}" rx="20" fill="url(#bg)"/>
-  <rect width="{width}" height="{height}" rx="20" fill="url(#grid)"/>
+  <rect width="{width}" height="{height}" rx="18" fill="url(#bg)"/>
+  <rect width="{width}" height="{height}" rx="18" fill="url(#grid)"/>
   <path d="M1 1H{width - 1}" stroke="url(#signal)" stroke-opacity="0.72"/>
 ''']
 
 
 def finish_svg(parts, width, height):
-    parts.append(f'<rect x="0.75" y="0.75" width="{width - 1.5}" height="{height - 1.5}" rx="19.25" stroke="#8EC5D1" stroke-opacity="0.20" stroke-width="1.5"/></svg>')
+    parts.append(f'<rect x="0.75" y="0.75" width="{width - 1.5}" height="{height - 1.5}" rx="17.25" stroke="#8EC5D1" stroke-opacity="0.20" stroke-width="1.5"/></svg>')
     return "".join(parts)
 
 
 # Compact telemetry deck
 width, height = 900, 230
 parts = base_svg(width, height, f"GitHub engineering telemetry for {USER}")
-parts.append(f'<text x="28" y="39" font-family="{MONO}" font-size="11.5" font-weight="600" letter-spacing="2" fill="{MINT}">ENGINEERING TELEMETRY / LIVE</text>')
+parts.append(f'<text x="28" y="39" font-family="{MONO}" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="{MINT}">[ TELEMETRY / LIVE ]</text>')
 parts.append(f'<text x="872" y="39" text-anchor="end" font-family="{MONO}" font-size="10.5" fill="{MUTE}">GITHUB GRAPHQL</text>')
 
 metrics = [
     (f"{total_all:,}", "CONTRIBUTIONS / ALL TIME", MINT),
     (f"{commits_12:,}", "COMMITS / 12 MONTHS", BLUE),
     (f"{prs_12:,}", "PULL REQUESTS / 12 MONTHS", AMBER),
-    (str(public_repos), "PUBLIC REPOSITORIES", "#E681A8"),
+    (str(public_repos), "PUBLIC REPOSITORIES", VIOLET),
 ]
 card_width = 201
 for index, (value, label, color) in enumerate(metrics):
@@ -168,13 +169,13 @@ for name, percent, color in languages:
 width, height = 900, 170
 parts = base_svg(width, height, "Contribution activity for the last year")
 last_total = last["contributionCalendar"]["totalContributions"]
-parts.append(f'<text x="28" y="37" font-family="{MONO}" font-size="11.5" font-weight="600" letter-spacing="1.6" fill="{MINT}">ACTIVITY / 365 DAYS</text>')
+parts.append(f'<text x="28" y="37" font-family="{MONO}" font-size="11.5" font-weight="700" letter-spacing="2.2" fill="{MINT}">[ ACTIVITY / 365 DAYS ]</text>')
 parts.append(f'<text x="872" y="37" text-anchor="end" font-family="{SANS}" font-size="12" fill="{SUB}">{last_total:,} contributions</text>')
 
 cell, gap = 11, 4
 origin_x, origin_y = 28, 53
 maximum = max((day["contributionCount"] for week in weeks_12 for day in week["contributionDays"]), default=1) or 1
-scale = ["#152732", "#174B4C", "#1C7A70", "#35B89F", MINT]
+scale = ["#111A22", "#134B43", "#1A7A6B", "#2FB39B", MINT]
 
 def level(count):
     if count <= 0:

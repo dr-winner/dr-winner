@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://duvorrichardwinner.me">
-    <img src="./assets/hero.svg" width="100%" alt="Winner (dr-winner) - Application Security & AI/LLM Security" />
+    <img src="./assets/hero.svg" width="100%" alt="drWinner - Application Security & AI/LLM Security" />
   </a>
 </p>
 

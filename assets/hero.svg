@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="292" viewBox="0 0 900 292" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">Winner (dr-winner) - Application Security &amp; AI/LLM Security</title>
-  <desc id="desc">Application security and AI/LLM security profile banner: console styling with a signal map, node links and an animated radar sweep.</desc>
+  <title id="title">drWinner - Application Security &amp; AI/LLM Security</title>
+  <desc id="desc">Application security and AI/LLM security profile banner: console styling with an animated signal map, radar sweep and live-trace line.</desc>
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#07090C"/>
@@ -11,16 +11,24 @@
       <stop stop-color="#50E3C2"/>
       <stop offset="1" stop-color="#B7A5FB"/>
     </linearGradient>
-    <linearGradient id="action" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#3ECFB0"/>
-      <stop offset="1" stop-color="#2AA78D"/>
-    </linearGradient>
+    <radialGradient id="nameGlow" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#50E3C2" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#50E3C2" stop-opacity="0"/>
+    </radialGradient>
     <radialGradient id="radar" cx="50%" cy="50%" r="50%">
       <stop stop-color="#50E3C2" stop-opacity="0.10"/>
       <stop offset="1" stop-color="#50E3C2" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="aiGlow" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#B7A5FB" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#B7A5FB" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sweepFill" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#50E3C2" stop-opacity="0.16"/>
+      <stop offset="0.85" stop-color="#50E3C2" stop-opacity="0"/>
+    </linearGradient>
     <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
-      <path d="M26 0H0V26" stroke="#8EC5D1" stroke-opacity="0.05"/>
+      <path d="M26 0H0V26" stroke="#A7C5CE" stroke-opacity="0.05"/>
     </pattern>
     <clipPath id="clip"><rect width="900" height="292" rx="18"/></clipPath>
     <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
@@ -35,12 +43,19 @@
   <g clip-path="url(#clip)">
     <rect width="900" height="292" fill="url(#surface)"/>
     <rect width="900" height="292" fill="url(#grid)"/>
+
+    <!-- ambient depth: name glow left, AI glow bottom-left, radar wash right -->
+    <ellipse cx="150" cy="100" rx="150" ry="86" fill="url(#nameGlow)"/>
+    <ellipse cx="52" cy="262" rx="130" ry="78" fill="url(#aiGlow)"/>
     <circle cx="746" cy="145" r="200" fill="url(#radar)"/>
-    <!-- top rule -->
+
+    <!-- top rule + divider rail -->
     <rect x="0" y="0" width="900" height="2" fill="url(#accent)"/>
-    <!-- divider rail -->
     <path d="M596 0V292" stroke="#A7C5CE" stroke-opacity="0.10"/>
     <path d="M596 3H900" stroke="#A7C5CE" stroke-opacity="0.16" stroke-dasharray="1 6"/>
+    <path d="M596 3H590M596 247H902" stroke="#A7C5CE" stroke-opacity="0.28"/>
+    <!-- registration crosses on the rail -->
+    <g stroke="#A7C5CE" stroke-opacity="0.25"><path d="M592 58H600M596 54V62"/><path d="M592 206H600M596 202V210"/></g>
 
     <!-- corner brackets -->
     <g stroke="#A7C5CE" stroke-opacity="0.38" stroke-width="2" fill="none">
@@ -48,17 +63,20 @@
       <path d="M886 262V278H870"/><path d="M30 278H14V262"/>
     </g>
 
-    <!-- label -->
-    <text x="42" y="50" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="12" font-weight="700" letter-spacing="2.6" fill="#50E3C2">[ RW / SECURITY ENGINEERING ]</text>
+    <!-- channel label -->
+    <text x="42" y="50" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="12" font-weight="700" letter-spacing="2.6" fill="#50E3C2">[ SECURITY ENGINEERING · APPSEC ]</text>
 
-    <!-- name + role -->
-    <text x="40" y="112" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="45" font-weight="750" letter-spacing="-1.5" fill="#EDF4F7">Winner (dr-winner)</text>
-    <text x="42" y="150" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="url(#accent)">Application Security &amp; AI/LLM Security</text>
+    <!-- name: drWinner -->
+    <text x="38" y="118" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="52" font-weight="800" letter-spacing="-2" fill="#F2F7F9"><tspan fill="#718994">dr</tspan><tspan>Winner</tspan></text>
+
+    <!-- role -->
+    <text x="42" y="156" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="url(#accent)">Application Security &amp; AI/LLM Security</text>
+
     <!-- terminal line -->
-    <text x="42" y="184" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="12.5" fill="#9DB1BB">&#62; finds what breaks <tspan fill="#50E3C2">&#183;</tspan> explains the fix <tspan fill="#50E3C2">&#183;</tspan> ships guardrails <tspan fill="#B7A5FB" class="motion">&#9679;</tspan></text>
+    <text x="42" y="190" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="12.5" fill="#9DB1BB">&#62; finds what breaks <tspan fill="#50E3C2">&#183;</tspan> explains the fix <tspan fill="#50E3C2">&#183;</tspan> ships guardrails <tspan fill="#B7A5FB" class="motion">&#9679;<animate attributeName="fill-opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/></tspan></text>
 
     <!-- chips — AppSec and AI first, pentest as supporting discipline -->
-    <g transform="translate(42 202)">
+    <g transform="translate(42 204)">
       <rect width="96" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
       <circle cx="16" cy="15" r="3" fill="#50E3C2"/>
       <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">APPSEC</text>
@@ -79,29 +97,49 @@
     <!-- signal map -->
     <g transform="translate(746 145)">
       <circle r="104" stroke="#72A6B4" stroke-opacity="0.14"/>
-      <circle r="76" stroke="#72A6B4" stroke-opacity="0.18" stroke-dasharray="3 7"/>
+      <circle r="76" stroke="#72A6B4" stroke-opacity="0.18" stroke-dasharray="3 7" class="motion">
+        <animateTransform attributeName="transform" type="rotate" values="0;-360" dur="70s" repeatCount="indefinite"/>
+      </circle>
       <circle r="46" stroke="#50E3C2" stroke-opacity="0.22"/>
-      <path d="M0 0L0-103A103 103 0 0 1 73-73Z" fill="#50E3C2" fill-opacity="0.07" class="motion">
-        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="12s" repeatCount="indefinite"/>
+
+      <!-- radar sweep -->
+      <path d="M0 0L0-103A103 103 0 0 1 73-73Z" fill="url(#sweepFill)" class="motion">
+        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="16s" repeatCount="indefinite"/>
       </path>
-      <path d="M-91 36L-44-15L8 28L67-52L96 4" stroke="#66A3FF" stroke-opacity="0.45" stroke-width="1.5"/>
-      <path d="M-44-15L8 28" stroke="#B7A5FB" stroke-opacity="0.5" stroke-width="1.5" class="motion">
-        <animate attributeName="stroke-opacity" values="0.15;0.65;0.15" dur="3.2s" repeatCount="indefinite"/>
+
+      <!-- live trace: draws, holds, redraws -->
+      <path d="M-91 36L-44-15L8 28L67-52L96 4" stroke="#8FB3E8" stroke-opacity="0.5" stroke-width="1.5" stroke-dasharray="300" stroke-dashoffset="0" class="motion">
+        <animate attributeName="stroke-dashoffset" values="300;300;0;0" keyTimes="0;0.12;0.62;1" dur="7.5s" repeatCount="indefinite"/>
       </path>
+      <path d="M-44-15L8 28" stroke="#B7A5FB" stroke-opacity="0.45" stroke-width="1.5" class="motion">
+        <animate attributeName="stroke-opacity" values="0.15;0.6;0.15" dur="3.2s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- nodes with staggered pulses -->
       <g fill="#50E3C2" filter="url(#glow)">
-        <circle cx="-91" cy="36" r="3"/><circle cx="-44" cy="-15" r="4"/><circle cx="8" cy="28" r="3"/><circle cx="67" cy="-52" r="4"/><circle cx="96" cy="4" r="3"/>
+        <circle cx="-91" cy="36" r="3"><animate attributeName="fill-opacity" values="1;0.45;1" dur="3.4s" repeatCount="indefinite"/></circle>
+        <circle cx="8" cy="28" r="3"><animate attributeName="fill-opacity" values="1;0.45;1" dur="3.4s" begin="1.1s" repeatCount="indefinite"/></circle>
+        <circle cx="96" cy="4" r="3"><animate attributeName="fill-opacity" values="1;0.45;1" dur="3.4s" begin="2.2s" repeatCount="indefinite"/></circle>
+        <circle cx="-44" cy="-15" r="4"/>
+        <circle cx="67" cy="-52" r="4"/>
       </g>
       <circle cx="67" cy="-52" r="2.5" fill="#B7A5FB"/>
+
+      <!-- center: settling dot + ripples -->
       <circle r="7" fill="#50E3C2" fill-opacity="0.16" stroke="#50E3C2"/>
-      <circle r="16" stroke="#50E3C2" stroke-opacity="0" class="motion">
+      <circle r="9" fill="none" stroke="#50E3C2" class="motion">
         <animate attributeName="r" values="9;24" dur="2.8s" repeatCount="indefinite"/>
         <animate attributeName="stroke-opacity" values="0.55;0" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="9" fill="none" stroke="#50E3C2" class="motion">
+        <animate attributeName="r" values="9;24" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.4;0" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
       </circle>
     </g>
 
     <!-- status footer -->
     <text x="622" y="262" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="10.5" letter-spacing="1.4" fill="#718994">STATUS: OWASP · CVSS · ATT&amp;CK</text>
-    <circle cx="851" cy="258" r="4" fill="#3ECFB0" class="motion">
+    <circle cx="872" cy="258" r="4" fill="#3ECFB0" class="motion">
       <animate attributeName="fill-opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
     </circle>
   </g>
