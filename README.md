@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://duvorrichardwinner.me">
-    <img src="./assets/hero.svg" width="100%" alt="Winner (dr-winner) - Ethical Hacker & AI/LLM App Security" />
+    <img src="./assets/hero.svg" width="100%" alt="Winner (dr-winner) - Application Security & AI/LLM Security" />
   </a>
 </p>
 
@@ -19,9 +19,9 @@
 
 ## [ 01 · About ]
 
-**Web Application Penetration Tester & Application Security Engineer** with a production software engineering foundation in **React, Next.js, and TypeScript**, now turning that same instinct on **AI/LLM application security**.
+**Application Security Engineer** focused on **web/API security and the security of AI/LLM applications**, with a production software engineering foundation in **React, Next.js, and TypeScript**.
 
-I bridge the gap between offensive security testing and hands-on development: using a builder's intuition to identify architectural and logic flaws across web apps, APIs, and cloud services — then engineering concrete, production-ready fixes, parameterized patterns, and automated detection guardrails. My newest lab applies the **OWASP Top 10 for LLM Applications** to RAG pipelines and tool-using agents: indirect prompt injection, cross-tenant data leaks, and excessive agency, tested deterministically in CI.
+I find what would break in production before an attacker does: manual penetration testing, secure code review and threat modeling across web apps, APIs and cloud services — then I engineer the fix, not just the report: production-ready patches, parameterized patterns and automated detection guardrails. My dedicated lab applies the **OWASP Top 10 for LLM Applications** to RAG pipelines and tool-using agents: indirect prompt injection, cross-tenant data leaks and excessive agency, tested deterministically in CI.
 
 ## [ 02 · Featured Security Work ]
 
@@ -50,7 +50,7 @@ Leveraging full-stack experience to build and audit modern web architectures:
 
 ## [ 04 · Core Security & Technical Competencies ]
 
-- **Web/API Penetration Testing** — OWASP Top 10, API Security Top 10, authentication bypass, SQL injection, broken access control (IDOR/BOLA/BFLA), cryptographic flaws, session attacks, Burp Suite Pro.
+- **Application Security (Web & API)** — manual penetration testing and secure code review against the OWASP Top 10 and API Security Top 10: authentication bypass, SQL injection, broken access control (IDOR/BOLA/BFLA), session attacks, cryptographic flaws, Burp Suite Pro.
 - **AI/LLM Application Security** — OWASP Top 10 for LLM Applications, direct & indirect prompt injection, unsafe output handling, excessive agency, RAG cross-tenant leakage, LLM evaluation.
 - **Cloud & Detection Engineering** — AWS (GuardDuty, CloudTrail, EventBridge, Lambda, IAM, S3 hardening), detection-as-code, Terraform, Checkov, MITRE ATT&CK.
 - **Recon & OSINT** — passive subdomain harvesting, DNS zone profiling, Maltego link analysis, GHDB, theHarvester, Shodan, Nmap/Zenmap.
@@ -69,11 +69,11 @@ Leveraging full-stack experience to build and audit modern web architectures:
 
 ## [ 06 · Current Focus ]
 
-- Running penetration testing on AI/LLM features: RAG pipelines, agents, and chat surfaces.
+- Security-testing AI/LLM features: RAG pipelines, agents and chat surfaces, against the OWASP LLM Top 10.
 - Building deterministic security engines for LLM agents that gate releases inside CI.
 - Writing production-grade remediation patches that fix root-cause weaknesses.
 
 <p align="center">
-  <strong>▍Open to Web Application Penetration Testing, AppSec & AI Security roles.</strong><br />
+  <strong>▍Open to Application Security, Product Security & AI/LLM Security roles.</strong><br />
   <sub>Accra, Ghana · GMT · <a href="https://duvorrichardwinner.me">duvorrichardwinner.me</a> · <a href="mailto:duvorrichardwinner@gmail.com">duvorrichardwinner@gmail.com</a></sub>
 </p>

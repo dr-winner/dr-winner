@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="292" viewBox="0 0 900 292" fill="none" role="img" aria-labelledby="title desc">
-  <title id="title">Winner (dr-winner) - Ethical Hacker &amp; AI/LLM Application Security</title>
-  <desc id="desc">Security engineering profile banner: console styling with a signal map, node links and the words AppSec built for</desc>
+  <title id="title">Winner (dr-winner) - Application Security &amp; AI/LLM Security</title>
+  <desc id="desc">Application security and AI/LLM security profile banner: console styling with a signal map, node links and an animated radar sweep.</desc>
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#07090C"/>
@@ -53,26 +53,26 @@
 
     <!-- name + role -->
     <text x="40" y="112" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="45" font-weight="750" letter-spacing="-1.5" fill="#EDF4F7">Winner (dr-winner)</text>
-    <text x="42" y="150" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="url(#accent)">Ethical Hacker &amp; AI/LLM App Security</text>
+    <text x="42" y="150" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif" font-size="22" font-weight="600" fill="url(#accent)">Application Security &amp; AI/LLM Security</text>
     <!-- terminal line -->
     <text x="42" y="184" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="12.5" fill="#9DB1BB">&#62; finds what breaks <tspan fill="#50E3C2">&#183;</tspan> explains the fix <tspan fill="#50E3C2">&#183;</tspan> ships guardrails <tspan fill="#B7A5FB" class="motion">&#9679;</tspan></text>
 
-    <!-- chips -->
+    <!-- chips — AppSec and AI first, pentest as supporting discipline -->
     <g transform="translate(42 202)">
-      <rect width="146" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
+      <rect width="96" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
       <circle cx="16" cy="15" r="3" fill="#50E3C2"/>
-      <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">WEB PENTESTING</text>
-      <rect x="156" width="150" height="30" rx="15" fill="#B7A5FB" fill-opacity="0.07" stroke="#B7A5FB" stroke-opacity="0.30"/>
-      <circle cx="172" cy="15" r="3" fill="#B7A5FB"/>
-      <text x="183" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D9D3F7">AI / LLM SECURITY</text>
+      <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">APPSEC</text>
+      <rect x="106" width="150" height="30" rx="15" fill="#B7A5FB" fill-opacity="0.07" stroke="#B7A5FB" stroke-opacity="0.30"/>
+      <circle cx="122" cy="15" r="3" fill="#B7A5FB"/>
+      <text x="133" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D9D3F7">AI / LLM SECURITY</text>
 
       <g transform="translate(0 37)">
-        <rect width="96" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
+        <rect width="146" height="30" rx="15" fill="#50E3C2" fill-opacity="0.08" stroke="#50E3C2" stroke-opacity="0.32"/>
         <circle cx="16" cy="15" r="3" fill="#50E3C2"/>
-        <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">APPSEC</text>
-        <rect x="106" width="154" height="30" rx="15" fill="#5B8DEF" fill-opacity="0.08" stroke="#5B8DEF" stroke-opacity="0.30"/>
-        <circle cx="122" cy="15" r="3" fill="#5B8DEF"/>
-        <text x="133" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D3E2FF">CLOUD SECURITY</text>
+        <text x="27" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#CDE9E3">WEB PENTESTING</text>
+        <rect x="156" width="154" height="30" rx="15" fill="#5B8DEF" fill-opacity="0.08" stroke="#5B8DEF" stroke-opacity="0.30"/>
+        <circle cx="172" cy="15" r="3" fill="#5B8DEF"/>
+        <text x="183" y="19.5" font-family="'JetBrains Mono','SFMono-Regular',ui-monospace,Consolas,monospace" font-size="11.5" fill="#D3E2FF">CLOUD SECURITY</text>
       </g>
     </g>
 
